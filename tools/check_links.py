@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check every official link in data.js.
+"""Check every official link in data.js and states.js.
 
 Many Indian government sites block visitors from outside India, so run this
 from an Indian internet connection for reliable results.
@@ -13,7 +13,8 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-DATA = Path(__file__).resolve().parent.parent / "data.js"
+ROOT = Path(__file__).resolve().parent.parent
+FILES = [ROOT / "data.js", ROOT / "states.js"]
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128 Safari/537.36"
 
 
@@ -31,7 +32,8 @@ def check(url):
 
 
 def main():
-    urls = sorted(set(re.findall(r'u: "([^"]+)"', DATA.read_text(encoding="utf-8"))))
+    text = "".join(f.read_text(encoding="utf-8") for f in FILES if f.exists())
+    urls = sorted(set(re.findall(r'u: "([^"]+)"', text)))
     bad = 0
     for url in urls:
         status, final = check(url)

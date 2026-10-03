@@ -7,6 +7,9 @@
              links: u = official URL, n = site name (nh = Hindi name, optional).
              help  = official helpline, state = true if run by state governments.
 
+  A keyword starting with "=" matches whole words only — use it for short Hindi words that also sit
+  inside longer ones ("=कार" must not match "कार्ड" or "सरकार"). Combine as "~=" for a weak one.
+
   A keyword starting with "~" is weak: it scores less and only counts when the
   question also matches the service's topic. Use it for everyday words like
   "new", "name" or "apply" that mean different things in different topics.
@@ -36,7 +39,7 @@ window.BABU_DATA = {
     { id: "dl", icon: "wheel", kw: ["driving", "licence", "license", "dl", "ड्राइविंग", "लाइसेंस"],
       en: { t: "Driving licence", d: "Learner’s licence, new licence, renewal and status.", q: "How do I renew my driving licence?" },
       hi: { t: "ड्राइविंग लाइसेंस", d: "लर्नर लाइसेंस, नया लाइसेंस, नवीनीकरण और स्टेटस।", q: "ड्राइविंग लाइसेंस का नवीनीकरण कैसे करूँ?" } },
-    { id: "vehicle", icon: "car", kw: ["vehicle", "car", "bike", "scooter", "rc", "registration certificate", "गाड़ी", "वाहन", "बाइक", "कार", "स्कूटर"],
+    { id: "vehicle", icon: "car", kw: ["vehicle", "car", "bike", "scooter", "rc", "registration certificate", "गाड़ी", "वाहन", "बाइक", "=कार", "स्कूटर"],
       en: { t: "Vehicles & challans", d: "RC transfer, vehicle registration and paying traffic challans.", q: "How do I pay my traffic challan?" },
       hi: { t: "वाहन और चालान", d: "RC ट्रांसफ़र, वाहन पंजीकरण और ट्रैफ़िक चालान भरना।", q: "ट्रैफ़िक चालान कैसे भरूँ?" } },
     { id: "ration", icon: "bag", kw: ["ration", "nfsa", "राशन"],
@@ -80,7 +83,7 @@ window.BABU_DATA = {
       hi: { t: "आधार में पता या जानकारी बदलें", s: "आधार नंबर और OTP से myAadhaar में लॉगिन करें, ज़रूरी अपडेट चुनें और सहायक दस्तावेज़ अपलोड करें। पता ऑनलाइन बदला जा सकता है; मोबाइल नंबर, फ़ोटो या फ़िंगरप्रिंट बदलने के लिए आधार केंद्र जाना होगा।" } },
     { id: "aadhaar-download", topic: "aadhaar", help: "1947",
       links: [{ u: "https://myaadhaar.uidai.gov.in/", n: "myAadhaar" }],
-      kw: ["download", "e-aadhaar", "eaadhaar", "pdf", "lost", "kho", "डाउनलोड", "ई-आधार", "खो", "~copy", "~कॉपी"],
+      kw: ["download", "e-aadhaar", "eaadhaar", "pdf", "lost", "kho", "डाउनलोड", "ई-आधार", "=खो", "~copy", "~कॉपी"],
       en: { t: "Download e-Aadhaar", s: "On myAadhaar, choose Download Aadhaar and enter your Aadhaar or enrolment number and the OTP. You get a password-protected PDF." },
       hi: { t: "ई-आधार डाउनलोड करें", s: "myAadhaar पर Download Aadhaar चुनें, आधार या एनरोलमेंट नंबर और OTP डालें। आपको पासवर्ड-सुरक्षित PDF मिलेगी।" } },
     { id: "aadhaar-status", topic: "aadhaar", help: "1947",
@@ -117,7 +120,7 @@ window.BABU_DATA = {
         { u: "https://onlineservices.proteantech.in/paam/endUserRegisterContact.html", n: "Protean — corrections", nh: "Protean — सुधार" },
         { u: "https://www.pan.utiitsl.com/", n: "UTIITSL" },
       ],
-      kw: ["lost", "kho", "खो", "reprint", "duplicate", "damaged", "डुप्लीकेट", "~correction", "~correct", "~change", "~name", "~physical", "~सुधार", "~गलत", "~ग़लत", "~नाम"],
+      kw: ["lost", "kho", "=खो", "reprint", "duplicate", "damaged", "डुप्लीकेट", "~correction", "~correct", "~change", "~name", "~physical", "~सुधार", "~गलत", "~ग़लत", "~नाम"],
       en: { t: "Replace a lost PAN card or correct your details", s: "Apply through the agency that issued your PAN — Protean (formerly NSDL) or UTIITSL. Both are authorised by the Income Tax Department. If you don’t know which, try your PAN on both." },
       hi: { t: "खोया पैन कार्ड दोबारा पाएँ या जानकारी सुधारें", s: "उसी एजेंसी से आवेदन करें जिसने आपका पैन जारी किया था — Protean (पहले NSDL) या UTIITSL। दोनों आयकर विभाग से अधिकृत हैं। पता न हो तो दोनों पर अपना पैन डालकर देखें।" } },
     { id: "pan-verify", topic: "pan",
@@ -182,7 +185,7 @@ window.BABU_DATA = {
     /* ---------- Ration card ---------- */
     { id: "ration-card", topic: "ration", state: true,
       links: [{ u: "https://nfsa.gov.in/portal/ration_card_state_portals_aa", n: "State ration card portals", nh: "राज्यों के राशन कार्ड पोर्टल" }],
-      kw: ["~add", "~member", "~wife", "~husband", "~child", "~delete", "~remove", "~change", "~name", "~new", "~apply", "~banwa", "~जोड़", "~जुड़", "~नाम", "~नया", "~सदस्य", "~पत्नी", "~पति", "~बच्चे", "~बनवा"],
+      kw: ["~add", "~member", "~wife", "~husband", "~child", "~delete", "~remove", "~change", "~name", "~new", "~apply", "~banwa", "~जोड़", "~जुड़", "~नाम", "~नया", "~सदस्य", "~पत्नी", "~=पति", "~बच्चे", "~बनवा"],
       en: { t: "Get a ration card, add members or make changes", s: "Ration cards are issued by your state. Pick your state from the official list to reach its food department portal." },
       hi: { t: "राशन कार्ड बनवाएँ, सदस्य जोड़ें या बदलाव करें", s: "राशन कार्ड आपका राज्य बनाता है। आधिकारिक सूची से अपना राज्य चुनकर उसके खाद्य विभाग के पोर्टल पर जाएँ।" } },
     { id: "ration-onorc", topic: "ration",
@@ -254,7 +257,7 @@ window.BABU_DATA = {
     { id: "birth-death", topic: "birth", state: true,
       links: [
         { u: "https://dc.crsorgi.gov.in/", n: "Civil Registration System", nh: "नागरिक पंजीकरण प्रणाली" },
-        { u: "https://crsorgi.gov.in/", n: "CRS (other states)", nh: "CRS (अन्य राज्य)" },
+        { u: "https://crsorgi.gov.in/", n: "CRS (other states)", nh: "CRS (अन्य राज्य)", other: true },
       ],
       kw: ["birth certificate", "death certificate", "register birth", "register death", "newborn", "janam", "जन्म प्रमाण", "मृत्यु प्रमाण", "~baby", "~born", "~praman patra"],
       en: { t: "Register a birth or death and get the certificate", s: "Births and deaths should be registered within 21 days. Many states use the national CRS portal; others have their own, and the CRS site tells you which." },
@@ -325,7 +328,7 @@ window.BABU_DATA = {
         { u: "https://pmay-urban.gov.in/", n: "PMAY-Urban", nh: "PMAY-शहरी" },
         { u: "https://www.rural.gov.in/", n: "Ministry of Rural Development (PMAY-Gramin)", nh: "ग्रामीण विकास मंत्रालय (PMAY-ग्रामीण)" },
       ],
-      kw: ["house", "housing", "awas", "pmay", "ghar", "makan", "घर", "मकान", "आवास", "~home"],
+      kw: ["house", "housing", "awas", "pmay", "ghar", "makan", "=घर", "मकान", "आवास", "~home"],
       en: { t: "Help with a home: PM Awas Yojana", s: "In towns and cities, apply under PMAY-Urban. In villages, PMAY-Gramin beneficiaries are chosen through surveys and the Gram Sabha — ask your gram panchayat." },
       hi: { t: "घर के लिए मदद: प्रधानमंत्री आवास योजना", s: "शहरों में PMAY-शहरी के तहत आवेदन करें। गाँवों में PMAY-ग्रामीण के लाभार्थी सर्वे और ग्राम सभा से चुने जाते हैं — अपनी ग्राम पंचायत से पूछें।" } },
     { id: "ujjwala", topic: "schemes",
@@ -357,7 +360,7 @@ window.BABU_DATA = {
       hi: { t: "किसी सामान या कंपनी की शिकायत करें", s: "राष्ट्रीय उपभोक्ता हेल्पलाइन पर ऑनलाइन या 1915 पर कॉल करके शिकायत दर्ज करें।" } },
     { id: "cpgrams", topic: "complaints",
       links: [{ u: "https://pgportal.gov.in/", n: "CPGRAMS" }],
-      kw: ["grievance", "cpgrams", "pgportal", "government office", "सरकारी दफ़्तर", "सरकारी दफ्तर", "~department", "~officer", "~delay", "~विभाग", "~देरी"],
+      kw: ["grievance", "cpgrams", "pgportal", "government office", "सरकारी दफ़्तर", "सरकारी दफ्तर", "~department", "~officer", "~delay", "~government", "~govt", "~sarkar", "~sarkari", "~विभाग", "~देरी", "~सरकार"],
       en: { t: "Complain about a government department", s: "File a grievance against a central or state government office on CPGRAMS and track it." },
       hi: { t: "किसी सरकारी विभाग की शिकायत करें", s: "CPGRAMS पर केंद्र या राज्य सरकार के किसी दफ़्तर के ख़िलाफ़ शिकायत दर्ज करें और उसे ट्रैक करें।" } },
     { id: "rti", topic: "complaints",
@@ -372,7 +375,7 @@ window.BABU_DATA = {
       hi: { t: "खोया या चोरी हुआ फ़ोन ब्लॉक करें", s: "पुलिस में रिपोर्ट करें, फिर संचार साथी पर फ़ोन ब्लॉक करें ताकि भारत में किसी भी नेटवर्क पर उसका इस्तेमाल न हो सके।" } },
     { id: "sim-check", topic: "complaints",
       links: [{ u: "https://sancharsaathi.gov.in/", n: "Sanchar Saathi", nh: "संचार साथी" }],
-      kw: ["sim", "sims", "mobile connections", "connections in my name", "in my name", "fraud call", "spam call", "fake call", "chakshu", "सिम", "फ़र्ज़ी कॉल", "फर्जी कॉल"],
+      kw: ["sim", "sims", "mobile connections", "connections in my name", "in my name", "fraud call", "spam call", "fake call", "chakshu", "=सिम", "फ़र्ज़ी कॉल", "फर्जी कॉल"],
       en: { t: "See which SIM cards are in your name, or report fraud calls", s: "Check the mobile connections issued against your ID, and report suspected fraud calls or messages." },
       hi: { t: "देखें आपके नाम पर कौन-से सिम हैं, या फ़र्ज़ी कॉल की शिकायत करें", s: "अपनी आईडी पर जारी मोबाइल कनेक्शन देखें, और संदिग्ध फ़्रॉड कॉल या मैसेज की शिकायत करें।" } },
 
