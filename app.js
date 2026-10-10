@@ -53,7 +53,7 @@
       "next.title": "Coming next", "next.tag": "Soon",
       "faq.title": "Questions",
       "closing.title": "Got a sarkari kaam? Ask Babu.",
-      "footer.disclaimer": "BabuIndia.in is an independent project. It is not affiliated with, endorsed by or run by the Government of India or any state government. For official information, visit india.gov.in.",
+      "footer.disclaimer": "BabuIndia is an independent project. It is not affiliated with, endorsed by or run by the Government of India or any state government. For official information, visit india.gov.in.",
       "chat.who": "Babu",
       "chat.close": "Clear",
       "chat.empty": "Type your question first — for example, how to update your Aadhaar address.",
@@ -115,7 +115,7 @@
       "next.title": "आगे क्या आ रहा है", "next.tag": "जल्द",
       "faq.title": "सवाल-जवाब",
       "closing.title": "कोई सरकारी काम है? बाबू से पूछिए।",
-      "footer.disclaimer": "BabuIndia.in एक स्वतंत्र प्रोजेक्ट है। इसका भारत सरकार या किसी राज्य सरकार से कोई संबंध नहीं है, और न ही यह उनके द्वारा चलाया या समर्थित है। आधिकारिक जानकारी के लिए india.gov.in देखें।",
+      "footer.disclaimer": "BabuIndia एक स्वतंत्र प्रोजेक्ट है। इसका भारत सरकार या किसी राज्य सरकार से कोई संबंध नहीं है, और न ही यह उनके द्वारा चलाया या समर्थित है। आधिकारिक जानकारी के लिए india.gov.in देखें।",
       "chat.who": "बाबू",
       "chat.close": "हटाएँ",
       "chat.empty": "पहले अपना सवाल लिखें — जैसे, आधार में पता कैसे बदलें।",
@@ -204,7 +204,7 @@
 
   const FAQ = {
     en: [
-      ["Is Babu a government website?", "No. BabuIndia.in is an independent project. It is not run, funded or endorsed by the Government of India or any state government. For official services, always use the linked government portal."],
+      ["Is Babu a government website?", "No. BabuIndia is an independent project. It is not run, funded or endorsed by the Government of India or any state government. For official services, always use the linked government portal."],
       ["Why the name ‘Babu’?", "In India, ‘babu’ is the everyday word for a government clerk. Our Babu is the helpful kind — no queue, no token, no ‘come back tomorrow’."],
       ["Is it free?", "Yes. No ads, no paid listings, no agents or middlemen."],
       ["Will Babu ask for my Aadhaar number or OTP?", "Never. Babu doesn’t need your Aadhaar, PAN, OTP, passwords or bank details. If anyone claiming to be Babu asks for them, it’s a scam."],
@@ -215,7 +215,7 @@
       ["My state does things differently.", "Many services — ration cards, certificates, land records — are run by states. Pick your state (or just mention it, like “ration card in Bihar”) and Babu shows that state’s own portals."],
     ],
     hi: [
-      ["क्या बाबू सरकारी वेबसाइट है?", "नहीं। BabuIndia.in एक स्वतंत्र प्रोजेक्ट है। इसे भारत सरकार या कोई राज्य सरकार न चलाती है, न इसका खर्च उठाती है और न इसका समर्थन करती है। आधिकारिक सेवाओं के लिए हमेशा लिंक किए गए सरकारी पोर्टल का ही इस्तेमाल करें।"],
+      ["क्या बाबू सरकारी वेबसाइट है?", "नहीं। BabuIndia एक स्वतंत्र प्रोजेक्ट है। इसे भारत सरकार या कोई राज्य सरकार न चलाती है, न इसका खर्च उठाती है और न इसका समर्थन करती है। आधिकारिक सेवाओं के लिए हमेशा लिंक किए गए सरकारी पोर्टल का ही इस्तेमाल करें।"],
       ["नाम ‘बाबू’ क्यों?", "भारत में सरकारी दफ़्तर के क्लर्क को आम तौर पर ‘बाबू’ कहते हैं। हमारा बाबू मददगार है — न लाइन, न टोकन, न ‘कल आना’।"],
       ["क्या यह मुफ़्त है?", "हाँ। कोई विज्ञापन नहीं, कोई पेड लिस्टिंग नहीं, कोई एजेंट या बिचौलिया नहीं।"],
       ["क्या बाबू मेरा आधार नंबर या OTP माँगेगा?", "कभी नहीं। बाबू को आपका आधार, पैन, OTP, पासवर्ड या बैंक जानकारी नहीं चाहिए। अगर बाबू के नाम पर कोई इन्हें माँगे, तो वह धोखाधड़ी है।"],

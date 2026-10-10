@@ -1,8 +1,10 @@
-# BabuIndia.in
+# BabuIndia
 
 Tell Babu what you need from the government — Aadhaar, PAN, passport, ration card, PF and more — in plain English or Hindi, and it sends you straight to the right official page.
 
 > Independent project. Not a Government of India website.
+
+**Live site:** https://yashaswyakella.github.io/babuindia/ (hosted free on GitHub Pages from this repository's `main` branch)
 
 ## How it works
 
@@ -51,7 +53,15 @@ babuState("caste certificate Jaipur")   // "rajasthan"
 
 ## Updating the site
 
-After changing any CSS or JS file, bump the `?v=` date on the `<link>` and `<script>` tags in `index.html` so visitors get the new version straight away.
+The site is served by GitHub Pages from the root of the `main` branch of [YashaswyAkella/babuindia](https://github.com/YashaswyAkella/babuindia). To publish a change:
+
+1. In the repository on GitHub, choose **Add file → Upload files** and drop in the changed files (files with the same name are replaced). Keep the folder layout — `tools/check_links.py` goes in a `tools` folder.
+2. Click **Commit changes**.
+3. Watch the **Actions** tab: when the "pages build and deployment" run turns green (usually a minute or two), the update is live at https://yashaswyakella.github.io/babuindia/.
+
+Before uploading, bump the `?v=` date on the `<link>` and `<script>` tags in `index.html` whenever you change a CSS or JS file, so visitors' browsers fetch the new version instead of an old cached copy.
+
+All links in the site are relative (`styles.css`, `app.js`, `#topics`…), so it works under the `/babuindia/` path without changes. If you later connect your own domain (repository **Settings → Pages → Custom domain**), nothing in the code needs to change either.
 
 ## Checking links
 
