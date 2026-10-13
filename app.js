@@ -4,133 +4,69 @@
   const { TOPICS, SERVICES, reviewed } = window.BABU_DATA;
   const STATES = window.BABU_STATES || [];
 
-  /* ---------- UI strings ---------- */
-  const T = {
-    en: {
-      skip: "Skip to content",
-      notice: "Independent project · Not a Government of India website",
-      "nav.topics": "What to ask", "nav.states": "States", "nav.how": "How it works", "nav.sources": "Sources", "nav.faq": "FAQ",
-      cta: "Ask Babu", menu: "Menu",
-      "states.title": "Your state or union territory",
-      "states.sub": "All 28 states and 8 union territories. Pick yours to see its official portals for certificates, land records, ration cards and complaints.",
-      "states.all": "All states and union territories",
-      "st.pickLabel": "Your state or UT",
-      "st.choose": "Choose…",
-      "st.states": "States", "st.uts": "Union territories",
-      "st.state": "State", "st.ut": "Union territory",
-      "st.portalsFor": "Official portals for {s}:",
-      "st.none": "We don’t have a checked {s} portal for this yet — use the national link below.",
-      "st.chip": "{s}: official portals",
-      "st.change": "Another state or UT:",
-      "cat.portal": "State government", "cat.portalUt": "UT administration", "cat.services": "Certificates & services", "cat.land": "Land records",
-      "cat.ration": "Ration card", "cat.birth": "Birth & death registration", "cat.grievance": "Complaints", "cat.rti": "RTI",
-      "stamp.ring": "NO QUEUE • NO TOKEN • NO ‘COME TOMORROW’ •",
-      "stamp.center": "APPROVED",
-      "hero.eyebrow": "No queue. No token. No ‘come back tomorrow’.",
-      "hero.title": "Namaste, India.",
-      "hero.lede": "Tell Babu what you need from the sarkar. It sends you straight to the right official page — no agents, no lookalike sites.",
-      "ask.label": "Describe what you need",
-      "ask.try": "Try",
-      "ask.voice": "Voice input coming soon",
-      "ask.send": "Ask",
-      "promise.free": "Free, no ads", "promise.login": "No login",
-      "promise.store": "Your question stays on your device", "promise.cite": "Only official links",
-      "topics.title": "What you can ask Babu",
-      "topics.sub": "Tap a topic to see its official pages.",
-      "topics.ask": "See official pages →",
-      "example.title": "What Babu gives you",
-      "example.sub": "The right official page, what to do once you’re there, and the helpline — no guesswork.",
-      "example.q": "I moved to Pune for work. How do I update the address on my Aadhaar?",
-      "how.title": "How Babu works",
-      "can.title": "What Babu can do", "cant.title": "What Babu can’t do",
-      "sources.title": "Only official sources",
-      "sources.sub": "Babu links only to websites run by the Government of India and state governments — almost all on .gov.in and .nic.in. If Babu doesn’t know, it says so.",
-      "sources.count": "{p} services and {n} states & UTs, linking to {s} official websites",
-      "sources.statesNote": "State and UT portals are listed under ‘Your state or union territory’.",
-      "sources.agency": "PAN cards are handled by two agencies authorised by the Income Tax Department, Protean and UTIITSL, so Babu links to them too.",
-      "sources.state": "Ration cards, certificates and land records are run by states. Pick your state and Babu shows its own portals.",
-      "sources.reviewed": "Links last reviewed: {d}",
-      "next.title": "Coming next", "next.tag": "Soon",
-      "faq.title": "Questions",
-      "closing.title": "Got a sarkari kaam? Ask Babu.",
-      "footer.disclaimer": "BabuIndia is an independent project. It is not affiliated with, endorsed by or run by the Government of India or any state government. For official information, visit india.gov.in.",
-      "chat.who": "Babu",
-      "chat.close": "Clear",
-      "chat.empty": "Type your question first — for example, how to update your Aadhaar address.",
-      "res.lead": "Here’s the official page for that:",
-      "res.open": "Open {n}",
-      "res.help": "Helpline",
-      "res.state": "Run by your state — choose yours to get its own portal.",
-      "res.related": "Not quite? Try:",
-      "res.safety": "Babu never asks for your Aadhaar number, OTP or bank details.",
-      "res.none": "I couldn’t match that to a service yet.",
-      "res.noneTry": "Try a few simple words, like “PAN card lost” or “PF withdraw” — or search these official directories:",
-      "res.popular": "People often ask:",
-      "res.topicLead": "Official pages for {t}:",
-    },
-    hi: {
-      skip: "मुख्य सामग्री पर जाएँ",
-      notice: "स्वतंत्र प्रोजेक्ट · यह भारत सरकार की वेबसाइट नहीं है",
-      "nav.topics": "क्या पूछें", "nav.states": "राज्य", "nav.how": "कैसे काम करता है", "nav.sources": "स्रोत", "nav.faq": "सवाल-जवाब",
-      cta: "बाबू से पूछें", menu: "मेनू",
-      "states.title": "आपका राज्य या केंद्र शासित प्रदेश",
-      "states.sub": "सभी 28 राज्य और 8 केंद्र शासित प्रदेश। अपना चुनें और प्रमाण पत्र, ज़मीन के रिकॉर्ड, राशन कार्ड और शिकायतों के सरकारी पोर्टल देखें।",
-      "states.all": "सभी राज्य और केंद्र शासित प्रदेश",
-      "st.pickLabel": "आपका राज्य या केंद्र शासित प्रदेश",
-      "st.choose": "चुनें…",
-      "st.states": "राज्य", "st.uts": "केंद्र शासित प्रदेश",
-      "st.state": "राज्य", "st.ut": "केंद्र शासित प्रदेश",
-      "st.portalsFor": "{s} के सरकारी पोर्टल:",
-      "st.none": "इसके लिए {s} का जाँचा हुआ पोर्टल अभी हमारे पास नहीं है — नीचे दिया राष्ट्रीय लिंक इस्तेमाल करें।",
-      "st.chip": "{s}: सरकारी पोर्टल",
-      "st.change": "कोई और राज्य या केंद्र शासित प्रदेश:",
-      "cat.portal": "राज्य सरकार", "cat.portalUt": "केंद्र शासित प्रदेश प्रशासन", "cat.services": "प्रमाण पत्र और सेवाएँ", "cat.land": "ज़मीन के रिकॉर्ड",
-      "cat.ration": "राशन कार्ड", "cat.birth": "जन्म और मृत्यु पंजीकरण", "cat.grievance": "शिकायतें", "cat.rti": "आरटीआई",
-      "stamp.ring": "न लाइन • न टोकन • न ‘कल आना’ • न लाइन • न टोकन • न ‘कल आना’ •",
-      "stamp.center": "स्वीकृत",
-      "hero.eyebrow": "न लाइन, न टोकन, न ‘कल आना’।",
-      "hero.title": "नमस्ते, भारत।",
-      "hero.lede": "बाबू को बताइए कि सरकार से आपको क्या काम है। वह आपको सीधे सही सरकारी पेज पर ले जाएगा — न एजेंट, न नकली वेबसाइट।",
-      "ask.label": "बताइए, आपको क्या चाहिए",
-      "ask.try": "पूछकर देखें:",
-      "ask.voice": "बोलकर पूछने की सुविधा जल्द आ रही है",
-      "ask.send": "पूछें",
-      "promise.free": "मुफ़्त, कोई विज्ञापन नहीं", "promise.login": "लॉगिन की ज़रूरत नहीं",
-      "promise.store": "आपका सवाल आपके डिवाइस पर ही रहता है", "promise.cite": "सिर्फ़ सरकारी लिंक",
-      "topics.title": "बाबू से क्या पूछ सकते हैं",
-      "topics.sub": "किसी विषय पर टैप करें और उसके सरकारी पेज देखें।",
-      "topics.ask": "सरकारी पेज देखें →",
-      "example.title": "बाबू आपको क्या देता है",
-      "example.sub": "सही सरकारी पेज, वहाँ जाकर क्या करना है, और हेल्पलाइन — कोई अंदाज़ा नहीं।",
-      "example.q": "मैं नौकरी के लिए पुणे आ गया हूँ। आधार में पता कैसे बदलूँ?",
-      "how.title": "बाबू कैसे काम करता है",
-      "can.title": "बाबू क्या कर सकता है", "cant.title": "बाबू क्या नहीं कर सकता",
-      "sources.title": "सिर्फ़ सरकारी स्रोत",
-      "sources.sub": "बाबू सिर्फ़ भारत सरकार और राज्य सरकारों की वेबसाइटों के लिंक देता है — लगभग सभी .gov.in और .nic.in पर। अगर बाबू को जवाब नहीं पता, तो वह साफ़ बता देता है।",
-      "sources.count": "{p} सेवाएँ और {n} राज्य व केंद्र शासित प्रदेश, {s} सरकारी वेबसाइटों के लिंक",
-      "sources.statesNote": "राज्यों और केंद्र शासित प्रदेशों के पोर्टल ‘आपका राज्य या केंद्र शासित प्रदेश’ हिस्से में हैं।",
-      "sources.agency": "पैन कार्ड का काम आयकर विभाग से अधिकृत दो एजेंसियाँ — Protean और UTIITSL — करती हैं, इसलिए बाबू उनके लिंक भी देता है।",
-      "sources.state": "राशन कार्ड, प्रमाण पत्र और ज़मीन के रिकॉर्ड राज्य चलाते हैं। अपना राज्य चुनें और बाबू उसी के पोर्टल दिखाएगा।",
-      "sources.reviewed": "लिंक की आख़िरी जाँच: {d}",
-      "next.title": "आगे क्या आ रहा है", "next.tag": "जल्द",
-      "faq.title": "सवाल-जवाब",
-      "closing.title": "कोई सरकारी काम है? बाबू से पूछिए।",
-      "footer.disclaimer": "BabuIndia एक स्वतंत्र प्रोजेक्ट है। इसका भारत सरकार या किसी राज्य सरकार से कोई संबंध नहीं है, और न ही यह उनके द्वारा चलाया या समर्थित है। आधिकारिक जानकारी के लिए india.gov.in देखें।",
-      "chat.who": "बाबू",
-      "chat.close": "हटाएँ",
-      "chat.empty": "पहले अपना सवाल लिखें — जैसे, आधार में पता कैसे बदलें।",
-      "res.lead": "इसके लिए सरकारी पेज यह है:",
-      "res.open": "{n} खोलें",
-      "res.help": "हेल्पलाइन",
-      "res.state": "यह सेवा राज्य चलाते हैं — अपना राज्य चुनें और उसका पोर्टल पाएँ।",
-      "res.related": "यह नहीं? इन्हें देखें:",
-      "res.safety": "बाबू कभी आपका आधार नंबर, OTP या बैंक जानकारी नहीं माँगता।",
-      "res.none": "मैं इसे अभी किसी सेवा से नहीं मिला पाया।",
-      "res.noneTry": "आसान शब्दों में लिखकर देखें, जैसे “पैन कार्ड खो गया” या “पीएफ निकालना” — या इन सरकारी निर्देशिकाओं में खोजें:",
-      "res.popular": "लोग अक्सर पूछते हैं:",
-      "res.topicLead": "{t} के सरकारी पेज:",
-    },
+  const { T, STEPS, CAN, CANT, NEXT, FAQ } = window.BABU_STRINGS;
+
+  /* ---------- Languages ----------
+     English and Hindi are built in; each lang/<code>.js file adds one more. A language file can
+     leave things out — they fall back to English. Its keywords are added to the matcher, so a
+     question typed in that script finds the right service whatever the page language is. */
+  const LANGS = [
+    { code: "en", name: "English" },
+    { code: "hi", name: "हिन्दी", fonts: ["Mukta:wght@400;500;600", "Tiro+Devanagari+Hindi"] },
+  ];
+  const FONTS = {
+    te: ["Noto+Sans+Telugu:wght@400;500;600", "Noto+Serif+Telugu:wght@400;500"],
+    ta: ["Noto+Sans+Tamil:wght@400;500;600", "Noto+Serif+Tamil:wght@400;500"],
+    kn: ["Noto+Sans+Kannada:wght@400;500;600", "Noto+Serif+Kannada:wght@400;500"],
+    ml: ["Noto+Sans+Malayalam:wght@400;500;600", "Noto+Serif+Malayalam:wght@400;500"],
+    bn: ["Noto+Sans+Bengali:wght@400;500;600", "Noto+Serif+Bengali:wght@400;500"],
+    or: ["Noto+Sans+Oriya:wght@400;500;600", "Noto+Serif+Oriya:wght@400;500"],
+    mr: ["Mukta:wght@400;500;600", "Tiro+Devanagari+Marathi"],
+    gu: ["Noto+Sans+Gujarati:wght@400;500;600", "Noto+Serif+Gujarati:wght@400;500"],
+    pa: ["Noto+Sans+Gurmukhi:wght@400;500;600", "Noto+Serif+Gurmukhi:wght@400;500"],
   };
+  const sameShape = (a, b) => Array.isArray(a) && a.length === b.length;
+  for (const [code, p] of Object.entries(window.BABU_LANGS || {})) {
+    LANGS.push({ code, name: p.name, fonts: FONTS[code] || [] });
+    T[code] = p.ui || {};
+    STEPS[code] = sameShape(p.steps, STEPS.en) ? p.steps : STEPS.en;
+    CAN[code] = sameShape(p.can, CAN.en) ? p.can : CAN.en;
+    CANT[code] = sameShape(p.cant, CANT.en) ? p.cant : CANT.en;
+    NEXT[code] = sameShape(p.next, NEXT.en) ? NEXT.en.map(([ic], i) => [ic, ...p.next[i]]) : NEXT.en;
+    FAQ[code] = sameShape(p.faq, FAQ.en) ? p.faq : FAQ.en;
+    reviewed[code] = p.reviewed || reviewed.en;
+    for (const tp of TOPICS) {
+      const x = p.topics?.[tp.id] || {};
+      tp[code] = { t: x.t || tp.en.t, d: x.d || tp.en.d, q: x.q || tp.en.q };
+      tp.kw.push(...(x.kw || []));
+    }
+    for (const sv of SERVICES) {
+      const x = p.services?.[sv.id] || {};
+      sv[code] = { t: x.t || sv.en.t, s: x.s || sv.en.s };
+      sv.kw.push(...(x.kw || []));
+    }
+    for (const st of STATES) {
+      const x = p.states?.[st.id] || {};
+      // The name counts as a state word too, unless the file marks it whole-word only ("=ଆସାମ").
+      if (x.name) { st[code] = x.name; if (!(x.words || []).includes("=" + x.name)) st.aliases.push(x.name); }
+      st.aliases.push(...(x.words || []));
+    }
+  }
+  const langByCode = Object.fromEntries(LANGS.map((l) => [l.code, l]));
+
+  // Each script's font is fetched only when its language is first shown.
+  const loadedFonts = new Set();
+  function loadFonts(code) {
+    const fams = langByCode[code]?.fonts || [];
+    if (!fams.length || loadedFonts.has(code)) return;
+    loadedFonts.add(code);
+    if (code === "hi") return; // already in index.html
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = `https://fonts.googleapis.com/css2?${fams.map((f) => `family=${f}`).join("&")}&display=swap`;
+    link.onload = () => fitStamp();
+    document.head.appendChild(link);
+  }
 
   /* ---------- Icons ---------- */
   const I = {
@@ -164,69 +100,6 @@
   const POPULAR = ["aadhaar-update", "pan-reprint", "pf-withdraw", "cyber-fraud"];
   const DIRECTORIES = ["https://www.myscheme.gov.in/find-scheme", "https://www.india.gov.in/services"];
 
-  /* ---------- Section content ---------- */
-  const STEPS = {
-    en: [
-      ["Say what you need", "Type in English or Hindi, the way you’d ask a friend. No forms, no login."],
-      ["Babu finds the right service", "It matches your question against a hand-checked list of official government pages."],
-      ["Go straight to the official page", "Apply, check a status or download a document there — no agents, no lookalike sites."],
-    ],
-    hi: [
-      ["जो चाहिए, लिखिए", "अंग्रेज़ी या हिंदी में वैसे ही लिखें जैसे किसी दोस्त से पूछते। न फ़ॉर्म, न लॉगिन।"],
-      ["बाबू सही सेवा खोजता है", "वह आपके सवाल को जाँचे-परखे सरकारी पेजों की सूची से मिलाता है।"],
-      ["सीधे सरकारी पेज पर जाएँ", "आवेदन, स्टेटस या डाउनलोड वहीं करें — न एजेंट, न नकली वेबसाइट।"],
-    ],
-  };
-
-  const CAN = {
-    en: ["Point you to the exact official page", "Tell you what to do once you’re there", "Give you the official helpline number", "Show your own state’s portals"],
-    hi: ["सही सरकारी पेज बताना", "वहाँ जाकर क्या करना है, यह बताना", "आधिकारिक हेल्पलाइन नंबर देना", "आपके राज्य के अपने पोर्टल दिखाना"],
-  };
-  const CANT = {
-    en: ["Fill in or submit forms for you", "See your application status or personal records", "Pull strings or skip the queue — there’s no ‘setting’ with Babu", "Give legal or financial advice"],
-    hi: ["आपके लिए फ़ॉर्म भरना या जमा करना", "आपके आवेदन का स्टेटस या निजी रिकॉर्ड देखना", "जुगाड़ लगाना या लाइन तोड़ना — बाबू के यहाँ कोई ‘सेटिंग’ नहीं चलती", "कानूनी या वित्तीय सलाह देना"],
-  };
-
-  const NEXT = {
-    en: [
-      ["lang", "More Indian languages", "Tamil, Telugu, Bengali, Marathi and more."],
-      ["mic", "Speak your question", "Voice input for people who’d rather talk than type."],
-      ["chat", "Babu on WhatsApp", "Ask from the app you already use every day."],
-      ["pin", "Help centres near you", "Find the nearest Common Service Centre or government office."],
-    ],
-    hi: [
-      ["lang", "और भारतीय भाषाएँ", "तमिल, तेलुगु, बांग्ला, मराठी और भी।"],
-      ["mic", "बोलकर पूछें", "उनके लिए जो लिखने से ज़्यादा बोलना पसंद करते हैं।"],
-      ["chat", "व्हाट्सऐप पर बाबू", "उसी ऐप से पूछें जो आप रोज़ इस्तेमाल करते हैं।"],
-      ["pin", "आपके पास सहायता केंद्र", "नज़दीकी कॉमन सर्विस सेंटर या सरकारी दफ़्तर खोजें।"],
-    ],
-  };
-
-  const FAQ = {
-    en: [
-      ["Is Babu a government website?", "No. BabuIndia is an independent project. It is not run, funded or endorsed by the Government of India or any state government. For official services, always use the linked government portal."],
-      ["Why the name ‘Babu’?", "In India, ‘babu’ is the everyday word for a government clerk. Our Babu is the helpful kind — no queue, no token, no ‘come back tomorrow’."],
-      ["Is it free?", "Yes. No ads, no paid listings, no agents or middlemen."],
-      ["Will Babu ask for my Aadhaar number or OTP?", "Never. Babu doesn’t need your Aadhaar, PAN, OTP, passwords or bank details. If anyone claiming to be Babu asks for them, it’s a scam."],
-      ["Where does my question go?", "Nowhere. Babu matches your question to a service right here in your browser. It isn’t sent to us or stored."],
-      ["How do I spot a fake government website?", "Check the address bar. Real government sites end in .gov.in or .nic.in. Fakes often tack extra words on the end — like dc.crsorgi.gov.in.something.in. Babu only links to the real addresses."],
-      ["Can Babu send me to the wrong page?", "It can pick the wrong service, and government sites change. Check that the page you land on is what you need. Links were last reviewed in {d}."],
-      ["Which languages does Babu speak?", "English and Hindi for now, with more Indian languages on the way."],
-      ["My state does things differently.", "Many services — ration cards, certificates, land records — are run by states. Pick your state (or just mention it, like “ration card in Bihar”) and Babu shows that state’s own portals."],
-    ],
-    hi: [
-      ["क्या बाबू सरकारी वेबसाइट है?", "नहीं। BabuIndia एक स्वतंत्र प्रोजेक्ट है। इसे भारत सरकार या कोई राज्य सरकार न चलाती है, न इसका खर्च उठाती है और न इसका समर्थन करती है। आधिकारिक सेवाओं के लिए हमेशा लिंक किए गए सरकारी पोर्टल का ही इस्तेमाल करें।"],
-      ["नाम ‘बाबू’ क्यों?", "भारत में सरकारी दफ़्तर के क्लर्क को आम तौर पर ‘बाबू’ कहते हैं। हमारा बाबू मददगार है — न लाइन, न टोकन, न ‘कल आना’।"],
-      ["क्या यह मुफ़्त है?", "हाँ। कोई विज्ञापन नहीं, कोई पेड लिस्टिंग नहीं, कोई एजेंट या बिचौलिया नहीं।"],
-      ["क्या बाबू मेरा आधार नंबर या OTP माँगेगा?", "कभी नहीं। बाबू को आपका आधार, पैन, OTP, पासवर्ड या बैंक जानकारी नहीं चाहिए। अगर बाबू के नाम पर कोई इन्हें माँगे, तो वह धोखाधड़ी है।"],
-      ["मेरा सवाल कहाँ जाता है?", "कहीं नहीं। बाबू आपके सवाल को आपके ब्राउज़र में ही किसी सेवा से मिलाता है। यह न हमें भेजा जाता है, न सेव होता है।"],
-      ["नकली सरकारी वेबसाइट कैसे पहचानें?", "ब्राउज़र में पता देखें। असली सरकारी साइटें .gov.in या .nic.in पर ख़त्म होती हैं। नकली साइटें अक्सर आख़िर में अतिरिक्त शब्द जोड़ देती हैं — जैसे dc.crsorgi.gov.in.something.in। बाबू सिर्फ़ असली पतों के लिंक देता है।"],
-      ["क्या बाबू मुझे ग़लत पेज पर भेज सकता है?", "वह ग़लत सेवा चुन सकता है, और सरकारी साइटें बदलती रहती हैं। देख लें कि जिस पेज पर पहुँचे हैं, वही आपको चाहिए। लिंक की आख़िरी जाँच {d} में हुई थी।"],
-      ["बाबू कौन-सी भाषाएँ बोलता है?", "अभी अंग्रेज़ी और हिंदी, जल्द ही और भारतीय भाषाएँ।"],
-      ["मेरे राज्य में नियम अलग हैं।", "राशन कार्ड, प्रमाण पत्र और ज़मीन के रिकॉर्ड जैसी कई सेवाएँ राज्य चलाते हैं। अपना राज्य चुनें (या सवाल में लिखें, जैसे “बिहार में राशन कार्ड”) और बाबू उसी राज्य के पोर्टल दिखाएगा।"],
-    ],
-  };
-
   /* ---------- Helpers ---------- */
   const $ = (s, r = document) => r.querySelector(s);
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -245,8 +118,13 @@
 
   /* ---------- Matching ----------
      Everything runs in the browser; the question is never sent anywhere. */
+  const INDIC = /[\u0900-\u0D7F]/; // Devanagari, Bengali, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam
   const norm = (s) => s.toLowerCase()
+    .replace(/[\u200C\u200D]/g, "")      // zero-width (non-)joiners typed in Malayalam, Telugu, Bengali…
+    // "PFలో", "PANకి": split Latin letters from Indian-script endings so both halves can match
+    .replace(/([a-z0-9])(?=[\u0900-\u0D7F])/g, "$1 ").replace(/([\u0900-\u0D7F])(?=[a-z0-9])/g, "$1 ")
     .normalize("NFD")
+    .replace(/[\u09BC\u0A3C\u0ABC\u0B3C\u0C3C\u0CBC]/g, "") // nuktas in other scripts
     .replace(/़/g, "")         // Devanagari nukta: फ़ = फ
     .replace(/ँ/g, "ं")   // chandrabindu ≈ anusvara
     .replace(/[^\p{L}\p{N}\p{M}]+/gu, " ")
@@ -259,7 +137,7 @@
     const whole = kw.startsWith("="); // "=कार": whole word only, so it doesn't match inside "कार्ड"
     const k = norm(whole ? kw.slice(1) : kw);
     const points = weak ? 1 : 3 + (k.includes(" ") ? 1 : 0);
-    if (/[ऀ-ॿ]/.test(k) && !whole) return { weak, points, test: (text) => text.includes(k) };
+    if (INDIC.test(k) && !whole) return { weak, points, test: (text) => text.includes(k) };
     // Short Latin words must match a whole word; longer ones match the start of a word.
     const re = new RegExp(`(^| )${escRe(k)}${whole || k.length <= 3 ? "( |$)" : ""}`);
     return { weak, points, test: (text) => re.test(text) };
@@ -287,7 +165,10 @@
   const STATE_CATS = ["services", "land", "ration", "birth", "grievance", "rti", "portal"];
   const CRS_LINK = { u: "https://dc.crsorgi.gov.in/", n: "Civil Registration System", nh: "नागरिक पंजीकरण प्रणाली" };
   const LAND = ["land", "khasra", "khatauni", "jamabandi", "bhulekh", "7 12", "satbara", "record of rights", "patta", "chitta",
-    "ज़मीन", "जमीन", "भूलेख", "खसरा", "खतौनी", "जमाबंदी", "सातबारा"].map(matcher);
+    "ज़मीन", "जमीन", "भूलेख", "खसरा", "खतौनी", "जमाबंदी", "सातबारा",
+    "భూమి", "భూ రికార్డ", "పహాణీ", "అడంగల్", "పట్టా", "నిలం", "நிலம்", "பட்டா", "சிட்டா", "ಭೂಮಿ", "ಜಮೀನು", "ಪಹಣಿ",
+    "ഭൂമി", "ഭൂരേഖ", "പട്ടയം", "জমি", "খতিয়ান", "পরচা", "ଜମି", "ପଟ୍ଟା", "ଖତିୟାନ",
+    "ਜ਼ਮੀਨ", "ਜਮ੍ਹਾਂਬੰਦੀ", "ਜਮਾਬੰਦੀ", "ਫ਼ਰਦ", "જમીન", "સાતબાર", "૭ ૧૨", "७ १२", "फेरफार"].map(matcher);
   // Services whose answer depends on the state, and which state portal categories to show (best first).
   const STATE_SERVICE = {
     "ration-card": () => ["ration"],
@@ -301,7 +182,12 @@
   // words ("Bengal" is not "Bengaluru"). Short codes like "UP" or "MP" only count in capitals, so
   // "sign up" doesn't mean Uttar Pradesh.
   const wholeWord = (w) => {
-    const re = new RegExp(`(^| )${escRe(norm(w))}( |$)`);
+    const strict = w.startsWith("="); // "=କଟକ": whole word only, so it isn't read inside କଟକଣା
+    const start = w.startsWith("^");  // "^पुणे": also with endings (Marathi पुण्यात), though Devanagari is otherwise whole-word
+    const k = norm(strict || start ? w.slice(1) : w);
+    // Telugu, Tamil, Kannada, Malayalam, Bengali and Odia add endings to names ("హైదరాబాద్‌లో" = in Hyderabad).
+    const suffixed = start || (!strict && INDIC.test(k) && !/[\u0900-\u097F]/.test(k));
+    const re = new RegExp(`(^| )${escRe(k)}${suffixed ? "" : "( |$)"}`);
     return (text) => re.test(text);
   };
   // "Margao (Madgaon)" counts as both "Margao" and "Madgaon".
@@ -656,9 +542,12 @@
   if (document.fonts) document.fonts.ready.then(fitStamp);
 
   function setLang(next, persist = true) {
-    lang = has(T, next) ? next : "en";
+    lang = has(langByCode, next) ? next : "en";
     document.documentElement.lang = lang;
-    document.querySelectorAll(".lang-toggle button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
+    loadFonts(lang);
+    $("#ai-note").hidden = lang === "en"; // every non-English page says it was translated by AI
+    const picker = $("#lang-select");
+    if (picker) picker.value = lang;
     renderStatic(); renderChips(); renderTopics(); renderStatesSection(); renderExample(); renderHow(); renderSources(); renderNext(); renderFaq();
     resetPlaceholder();
     fitStamp();
@@ -690,6 +579,8 @@
   const toAsk = () => $("#ask").scrollIntoView({ behavior: "smooth", block: "start" });
 
   document.addEventListener("click", (e) => {
+    const switchBtn = e.target.closest("[data-lang-switch]");
+    if (switchBtn) { setLang(switchBtn.dataset.langSwitch); return; }
     const topicBtn = e.target.closest("[data-topic]");
     if (topicBtn) { showTopic(topicBtn.dataset.topic); toAsk(); return; }
     const svcBtn = e.target.closest("[data-svc]");
@@ -713,8 +604,6 @@
       chat.hidden = true; chat.innerHTML = ""; lastView = null; textarea.focus();
       return;
     }
-    const langBtn = e.target.closest(".lang-toggle button");
-    if (langBtn) { setLang(langBtn.dataset.lang); return; }
     const menuBtn = e.target.closest(".menu-btn");
     if (menuBtn) {
       const open = $("#nav").classList.toggle("open");
@@ -759,8 +648,14 @@
   const urlLang = params.get("lang");
   const saved = store.get("babu.lang");
   setSelectedState(store.get("babu.state"));
-  const browserHi = (navigator.language || "").toLowerCase().startsWith("hi");
-  setLang(urlLang || saved || (browserHi ? "hi" : "en"), Boolean(urlLang));
+  // Language picker: every language in its own script.
+  const picker = $("#lang-select");
+  picker.innerHTML = LANGS.map((l) => `<option value="${esc(l.code)}" lang="${esc(l.code)}">${esc(l.name)}</option>`).join("");
+  picker.addEventListener("change", () => setLang(picker.value));
+  // First visit: use the browser's language if Babu speaks it.
+  const browserLang = (navigator.languages || [navigator.language || ""])
+    .map((l) => l.toLowerCase().split("-")[0]).find((l) => has(langByCode, l));
+  setLang(urlLang || saved || browserLang || "en", Boolean(urlLang));
 
   // Expose the matcher for quick checks in the console: babuRank("pan card lost")
   window.babuRank = (q) => rank(q).slice(0, 3).map((r) => `${r.s.id} (${r.score})`);

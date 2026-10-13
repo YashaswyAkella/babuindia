@@ -48,7 +48,18 @@
   --serif: "Tiro Devanagari Hindi", "Fraunces", Georgia, serif;
   --sans: "Mukta", "Inter", system-ui, sans-serif;
 }
-:root[lang="hi"] body { line-height: 1.7; }
+:root[lang="te"] { --serif: "Noto Serif Telugu", "Fraunces", Georgia, serif; --sans: "Noto Sans Telugu", "Inter", system-ui, sans-serif; }
+:root[lang="ta"] { --serif: "Noto Serif Tamil", "Fraunces", Georgia, serif; --sans: "Noto Sans Tamil", "Inter", system-ui, sans-serif; }
+:root[lang="kn"] { --serif: "Noto Serif Kannada", "Fraunces", Georgia, serif; --sans: "Noto Sans Kannada", "Inter", system-ui, sans-serif; }
+:root[lang="ml"] { --serif: "Noto Serif Malayalam", "Fraunces", Georgia, serif; --sans: "Noto Sans Malayalam", "Inter", system-ui, sans-serif; }
+:root[lang="bn"] { --serif: "Noto Serif Bengali", "Fraunces", Georgia, serif; --sans: "Noto Sans Bengali", "Inter", system-ui, sans-serif; }
+:root[lang="or"] { --serif: "Noto Serif Oriya", "Fraunces", Georgia, serif; --sans: "Noto Sans Oriya", "Inter", system-ui, sans-serif; }
+:root[lang="mr"] { --serif: "Tiro Devanagari Marathi", "Tiro Devanagari Hindi", "Fraunces", Georgia, serif; --sans: "Mukta", "Inter", system-ui, sans-serif; }
+:root[lang="gu"] { --serif: "Noto Serif Gujarati", "Fraunces", Georgia, serif; --sans: "Noto Sans Gujarati", "Inter", system-ui, sans-serif; }
+:root[lang="pa"] { --serif: "Noto Serif Gurmukhi", "Fraunces", Georgia, serif; --sans: "Noto Sans Gurmukhi", "Inter", system-ui, sans-serif; }
+/* Indian scripts need more room for vowel signs above and below the line */
+:root:not([lang="en"]) body { line-height: 1.7; }
+:root:is([lang="ta"], [lang="ml"], [lang="te"], [lang="kn"]) h1 { font-size: clamp(2.2rem, 6vw, 4.2rem); }
 
 /* ---------- Base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
@@ -93,6 +104,12 @@ button { font: inherit; color: inherit; }
   padding: 7px 16px; font-size: 12.5px; color: var(--ink-2);
   background: var(--marigold-soft); text-align: center;
 }
+.notice-ai { background: var(--accent-soft); color: var(--ink); flex-wrap: wrap; }
+.notice-ai[hidden] { display: none; }
+.notice-switch {
+  border: 1px solid currentColor; background: transparent; border-radius: 999px;
+  padding: 1px 10px; font-size: 12px; font-weight: 600; cursor: pointer; color: var(--accent);
+}
 .site-header {
   position: sticky; top: 0; z-index: 20;
   background: color-mix(in srgb, var(--bg) 88%, transparent);
@@ -114,12 +131,20 @@ button { font: inherit; color: inherit; }
 .nav a:hover { color: var(--ink); }
 
 .header-actions { display: flex; align-items: center; gap: 10px; }
-.lang-toggle { display: inline-flex; padding: 3px; border-radius: 999px; background: var(--surface-2); }
-.lang-toggle button {
-  border: 0; background: transparent; cursor: pointer;
-  min-width: 42px; height: 32px; border-radius: 999px; font-size: 13.5px; font-weight: 600; color: var(--muted);
+.lang-pick { position: relative; display: inline-flex; align-items: center; color: var(--muted); }
+.lang-pick svg { position: absolute; left: 11px; pointer-events: none; }
+.lang-select {
+  height: 38px; max-width: 150px; padding: 0 30px 0 32px; border-radius: 999px;
+  border: 0; background: var(--surface-2); color: var(--ink);
+  font: inherit; font-size: 14px; font-weight: 600; cursor: pointer;
+  appearance: none; -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4' fill='none' stroke='%236F7389' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 10px center; background-size: 14px;
 }
-.lang-toggle button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+@media (max-width: 420px) {
+  .brand-word span { display: none; }   /* room for language names like മലയാളം */
+  .lang-select { max-width: 140px; font-size: 13.5px; padding: 0 26px 0 30px; }
+}
 .menu-btn { display: none; border: 1px solid var(--line); background: var(--surface); border-radius: 999px; height: 38px; padding: 0 14px; font-weight: 600; font-size: 14px; cursor: pointer; }
 
 @media (max-width: 940px) {
@@ -157,11 +182,11 @@ button { font: inherit; color: inherit; }
   transform: rotate(14deg);
   pointer-events: none;
 }
-.stamp-ring { font-family: "Inter", "Mukta", sans-serif; font-weight: 600; }
+.stamp-ring { font-family: var(--sans); font-weight: 600; }
 .stamp-big { font-family: "Tiro Devanagari Hindi", serif; font-size: 34px; }
 /* Letter-spacing breaks Devanagari shaping */
-:root[lang="hi"] .stamp-ring, :root[lang="hi"] .stamp-small { letter-spacing: 0; }
-.stamp-small { font-family: "Inter", "Mukta", sans-serif; font-weight: 700; font-size: 10.5px; letter-spacing: 2.5px; }
+:root:not([lang="en"]) .stamp-ring, :root:not([lang="en"]) .stamp-small, :root:not([lang="en"]) .states-group { letter-spacing: 0; }
+.stamp-small { font-family: var(--sans); font-weight: 700; font-size: 10.5px; letter-spacing: 2.5px; }
 
 .eyebrow {
   display: inline-block; font-size: 13.5px; font-weight: 600; color: var(--accent);

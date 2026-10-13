@@ -37,7 +37,7 @@ window.BABU_STATES = [
     help: [] },
   { id: "arunachal-pradesh", type: "state", en: "Arunachal Pradesh", hi: "अरुणाचल प्रदेश", crs: true,
     codes: [], aliases: ["Arunachal", "Arunachal Pradesh", "North-East Frontier Agency", "अरुणाचल", "अरुणाचल प्रदेश"],
-    cities: [{"en": "Itanagar", "hi": "ईटानगर"}, {"en": "Naharlagun", "hi": "नाहरलगुन"}, {"en": "Pasighat", "hi": "पासीघाट"}, {"en": "Tawang", "hi": "तवांग"}, {"en": "Bomdila", "hi": "बोमडिला"}, {"en": "Tezu", "hi": "तेज़ू"}, {"en": "", "hi": "आलो"}, {"en": "Roing", "hi": "रोइंग"}, {"en": "Namsai", "hi": "नामसाई"}],
+    cities: [{"en": "Itanagar", "hi": "ईटानगर"}, {"en": "Naharlagun", "hi": "नाहरलगुन"}, {"en": "Pasighat", "hi": "पासीघाट"}, {"en": "Tawang", "hi": "तवांग"}, {"en": "Bomdila", "hi": "बोमडिला"}, {"en": "Tezu", "hi": "तेज़ू"}, {"en": "Roing", "hi": "रोइंग"}, {"en": "Namsai", "hi": "नामसाई"}],
     links: [
       { c: "services", u: "https://eservice.arunachal.gov.in/", n: "Arunachal eServices", nh: "अरुणाचल ई-सर्विसेज़" },
       { c: "land", u: "https://lisa.arunachal.gov.in/", n: "LISA – Land Information System of Arunachal Pradesh", nh: "लीसा – अरुणाचल प्रदेश भूमि सूचना प्रणाली" },
@@ -127,7 +127,7 @@ window.BABU_STATES = [
     ],
     help: [{"num": "+91-9319334335", "en": "Public Grievances Department helpline (Mon–Fri, 9:30 AM–5:45 PM)", "hi": "लोक शिकायत विभाग हेल्पलाइन (सोम–शुक्र, सुबह 9:30–शाम 5:45)"}, {"num": "1800-233-0022", "en": "Ration / Public Distribution System helpdesk", "hi": "राशन / सार्वजनिक वितरण प्रणाली हेल्पडेस्क"}, {"num": "+91-8882988000", "en": "Goa Online portal technical assistance (Mon–Fri office hours)", "hi": "गोवा ऑनलाइन पोर्टल तकनीकी सहायता (सोम–शुक्र कार्यालय समय)"}] },
   { id: "gujarat", type: "state", en: "Gujarat", hi: "गुजरात", crs: false,
-    codes: ["GJ"], aliases: ["Gujarat State", "Gujarath", "Gujrat", "गुजरात", "ગુજરાત"],
+    codes: ["GJ"], aliases: ["Gujarat State", "Gujarath", "Gujrat", "गुजरात", "=ગુજરાત", "ગુજરાતમાં", "ગુજરાતના", "ગુજરાતની", "ગુજરાતનું", "ગુજરાતથી"],
     cities: [{"en": "Ahmedabad", "hi": "अहमदाबाद"}, {"en": "Vadodara", "hi": "वडोदरा"}, {"en": "Rajkot", "hi": "राजकोट"}, {"en": "Gandhinagar", "hi": "गांधीनगर"}, {"en": "Bhavnagar", "hi": "भावनगर"}, {"en": "Jamnagar", "hi": "जामनगर"}, {"en": "Junagadh", "hi": "जूनागढ़"}, {"en": "Bhuj", "hi": "भुज"}, {"en": "", "hi": "आणंद"}, {"en": "Baroda", "hi": "बड़ौदा"}],
     links: [
       { c: "services", u: "https://www.digitalgujarat.gov.in/", n: "Digital Gujarat", nh: "डिजिटल गुजरात" },
@@ -319,7 +319,7 @@ window.BABU_STATES = [
     ],
     help: [{"num": "1800-425-1082", "en": "Civil Supplies (PDS) toll-free helpdesk", "hi": "नागरिक आपूर्ति (पीडीएस) टोल-फ्री हेल्पडेस्क"}, {"num": "1800-425-2260", "en": "e-District Puducherry toll-free helpline", "hi": "ई-डिस्ट्रिक्ट पुदुचेरी टोल-फ्री हेल्पलाइन"}] },
   { id: "punjab", type: "state", en: "Punjab", hi: "पंजाब", crs: false,
-    codes: ["PB"], aliases: ["Panjab", "Punjab State", "ਪੰਜਾਬ"],
+    codes: ["PB"], aliases: ["Panjab", "Punjab State", "=ਪੰਜਾਬ", "ਪੰਜਾਬ'ਚ", "ਪੰਜਾਬਚ"],
     cities: [{"en": "Ludhiana", "hi": "लुधियाना"}, {"en": "Amritsar", "hi": "अमृतसर"}, {"en": "Jalandhar", "hi": "जालंधर"}, {"en": "Patiala", "hi": "पटियाला"}, {"en": "Bathinda", "hi": "बठिंडा"}, {"en": "Mohali", "hi": "मोहाली"}, {"en": "Hoshiarpur", "hi": "होशियारपुर"}, {"en": "Pathankot", "hi": "पठानकोट"}, {"en": "Moga", "hi": "मोगा"}, {"en": "Firozpur", "hi": "फ़िरोज़पुर"}],
     links: [
       { c: "services", u: "https://digi.punjab.gov.in/", n: "DiGi Punjab (Unified Digital Platform for Citizen Services)", nh: "डिजी पंजाब (नागरिक सेवाओं के लिए एकीकृत डिजिटल प्लेटफ़ॉर्म)" },

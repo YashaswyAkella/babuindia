@@ -1,0 +1,1759 @@
+{
+ "ui": {
+  "skip": "Skip to content",
+  "lang.label": "Language",
+  "notice.ai": "Translated by AI — may contain mistakes. Check the official website before you act.",
+  "footer.ai": "Translations into Indian languages were made by AI and checked automatically for completeness, script and matching — not by native speakers. They may contain mistakes. The English version and the official government websites are what count.",
+  "footer.asis": "Babu points you to official websites and gives general information only. It is not legal advice, and we cannot guarantee that every link or detail is current — always confirm on the official website.",
+  "notice": "Independent project · Not a Government of India website",
+  "nav.topics": "What to ask",
+  "nav.states": "States",
+  "nav.how": "How it works",
+  "nav.sources": "Sources",
+  "nav.faq": "FAQ",
+  "cta": "Ask Babu",
+  "menu": "Menu",
+  "states.title": "Your state or union territory",
+  "states.sub": "All 28 states and 8 union territories. Pick yours to see its official portals for certificates, land records, ration cards and complaints.",
+  "states.all": "All states and union territories",
+  "st.pickLabel": "Your state or UT",
+  "st.choose": "Choose…",
+  "st.states": "States",
+  "st.uts": "Union territories",
+  "st.state": "State",
+  "st.ut": "Union territory",
+  "st.portalsFor": "Official portals for {s}:",
+  "st.none": "We don’t have a checked {s} portal for this yet — use the national link below.",
+  "st.chip": "{s}: official portals",
+  "st.change": "Another state or UT:",
+  "cat.portal": "State government",
+  "cat.portalUt": "UT administration",
+  "cat.services": "Certificates & services",
+  "cat.land": "Land records",
+  "cat.ration": "Ration card",
+  "cat.birth": "Birth & death registration",
+  "cat.grievance": "Complaints",
+  "cat.rti": "RTI",
+  "stamp.ring": "NO QUEUE • NO TOKEN • NO ‘COME TOMORROW’ •",
+  "stamp.center": "APPROVED",
+  "hero.eyebrow": "No queue. No token. No ‘come back tomorrow’.",
+  "hero.title": "Namaste, India.",
+  "hero.lede": "Tell Babu what you need from the sarkar. It sends you straight to the right official page — no agents, no lookalike sites.",
+  "ask.label": "Describe what you need",
+  "ask.try": "Try",
+  "ask.voice": "Voice input coming soon",
+  "ask.send": "Ask",
+  "promise.free": "Free, no ads",
+  "promise.login": "No login",
+  "promise.store": "Your question stays on your device",
+  "promise.cite": "Only official links",
+  "topics.title": "What you can ask Babu",
+  "topics.sub": "Tap a topic to see its official pages.",
+  "topics.ask": "See official pages →",
+  "example.title": "What Babu gives you",
+  "example.sub": "The right official page, what to do once you’re there, and the helpline — no guesswork.",
+  "example.q": "I moved to Pune for work. How do I update the address on my Aadhaar?",
+  "how.title": "How Babu works",
+  "can.title": "What Babu can do",
+  "cant.title": "What Babu can’t do",
+  "sources.title": "Only official sources",
+  "sources.sub": "Babu links only to websites run by the Government of India and state governments — almost all on .gov.in and .nic.in. If Babu doesn’t know, it says so.",
+  "sources.count": "{p} services and {n} states & UTs, linking to {s} official websites",
+  "sources.statesNote": "State and UT portals are listed under ‘Your state or union territory’.",
+  "sources.agency": "PAN cards are handled by two agencies authorised by the Income Tax Department, Protean and UTIITSL, so Babu links to them too.",
+  "sources.state": "Ration cards, certificates and land records are run by states. Pick your state and Babu shows its own portals.",
+  "sources.reviewed": "Links last reviewed: {d}",
+  "next.title": "Coming next",
+  "next.tag": "Soon",
+  "faq.title": "Questions",
+  "closing.title": "Got a sarkari kaam? Ask Babu.",
+  "footer.disclaimer": "BabuIndia is an independent project. It is not affiliated with, endorsed by or run by the Government of India or any state government. For official information, visit india.gov.in.",
+  "chat.who": "Babu",
+  "chat.close": "Clear",
+  "chat.empty": "Type your question first — for example, how to update your Aadhaar address.",
+  "res.lead": "Here’s the official page for that:",
+  "res.open": "Open {n}",
+  "res.help": "Helpline",
+  "res.state": "Run by your state — choose yours to get its own portal.",
+  "res.related": "Not quite? Try:",
+  "res.safety": "Babu never asks for your Aadhaar number, OTP or bank details.",
+  "res.none": "I couldn’t match that to a service yet.",
+  "res.noneTry": "Try a few simple words, like “PAN card lost” or “PF withdraw” — or search these official directories:",
+  "res.popular": "People often ask:",
+  "res.topicLead": "Official pages for {t}:"
+ },
+ "steps": [
+  [
+   "Say what you need",
+   "Type in your own language, the way you’d ask a friend. No forms, no login."
+  ],
+  [
+   "Babu finds the right service",
+   "It matches your question against a hand-checked list of official government pages."
+  ],
+  [
+   "Go straight to the official page",
+   "Apply, check a status or download a document there — no agents, no lookalike sites."
+  ]
+ ],
+ "can": [
+  "Point you to the exact official page",
+  "Tell you what to do once you’re there",
+  "Give you the official helpline number",
+  "Show your own state’s portals"
+ ],
+ "cant": [
+  "Fill in or submit forms for you",
+  "See your application status or personal records",
+  "Pull strings or skip the queue — there’s no ‘setting’ with Babu",
+  "Give legal or financial advice"
+ ],
+ "next": [
+  [
+   "More Indian languages",
+   "Assamese, Konkani, Maithili and more."
+  ],
+  [
+   "Speak your question",
+   "Voice input for people who’d rather talk than type."
+  ],
+  [
+   "Babu on WhatsApp",
+   "Ask from the app you already use every day."
+  ],
+  [
+   "Help centres near you",
+   "Find the nearest Common Service Centre or government office."
+  ]
+ ],
+ "faq": [
+  [
+   "Is Babu a government website?",
+   "No. BabuIndia is an independent project. It is not run, funded or endorsed by the Government of India or any state government. For official services, always use the linked government portal."
+  ],
+  [
+   "Why the name ‘Babu’?",
+   "In India, ‘babu’ is the everyday word for a government clerk. Our Babu is the helpful kind — no queue, no token, no ‘come back tomorrow’."
+  ],
+  [
+   "Is it free?",
+   "Yes. No ads, no paid listings, no agents or middlemen."
+  ],
+  [
+   "Will Babu ask for my Aadhaar number or OTP?",
+   "Never. Babu doesn’t need your Aadhaar, PAN, OTP, passwords or bank details. If anyone claiming to be Babu asks for them, it’s a scam."
+  ],
+  [
+   "Where does my question go?",
+   "Nowhere. Babu matches your question to a service right here in your browser. It isn’t sent to us or stored."
+  ],
+  [
+   "How do I spot a fake government website?",
+   "Check the address bar. Real government sites end in .gov.in or .nic.in. Fakes often tack extra words on the end — like dc.crsorgi.gov.in.something.in. Babu only links to the real addresses."
+  ],
+  [
+   "Can Babu send me to the wrong page?",
+   "It can pick the wrong service, and government sites change. Check that the page you land on is what you need. Links were last reviewed in {d}."
+  ],
+  [
+   "Who translated Babu into my language?",
+   "AI did. The translations were checked automatically for completeness, script and matching, but not by native speakers, so some wording may be wrong or awkward. If something seems unclear, switch to English or check the official website."
+  ],
+  [
+   "Which languages does Babu speak?",
+   "English, Hindi, Marathi, Gujarati, Punjabi, Telugu, Tamil, Kannada, Malayalam, Bengali and Odia — with more Indian languages on the way. Pick yours from the language menu at the top."
+  ],
+  [
+   "My state does things differently.",
+   "Many services — ration cards, certificates, land records — are run by states. Pick your state (or just mention it, like “ration card in Bihar”) and Babu shows that state’s own portals."
+  ]
+ ],
+ "reviewed": "October 2026",
+ "topics": {
+  "aadhaar": {
+   "t": "Aadhaar",
+   "d": "Update address or details, download e-Aadhaar, find a centre.",
+   "q": "I moved to a new city. How do I update my Aadhaar address?",
+   "hindi_example_q": "मैं नए शहर में आ गया हूँ। आधार में पता कैसे बदलूँ?",
+   "english_keywords": [
+    "aadhaar",
+    "aadhar",
+    "adhar",
+    "uidai",
+    "आधार"
+   ]
+  },
+  "pan": {
+   "t": "PAN card",
+   "d": "Instant e-PAN, Aadhaar linking, lost cards and corrections.",
+   "q": "My PAN card is lost. How do I get a new one?",
+   "hindi_example_q": "मेरा पैन कार्ड खो गया है। नया कैसे मिलेगा?",
+   "english_keywords": [
+    "pan",
+    "pan card",
+    "e-pan",
+    "epan",
+    "पैन"
+   ]
+  },
+  "passport": {
+   "t": "Passport",
+   "d": "New passports, renewals, children’s passports and tracking.",
+   "q": "How do I get a passport for my child?",
+   "hindi_example_q": "अपने बच्चे का पासपोर्ट कैसे बनवाऊँ?",
+   "english_keywords": [
+    "passport",
+    "पासपोर्ट"
+   ]
+  },
+  "voter": {
+   "t": "Voter ID",
+   "d": "Register to vote, find your name in the list, make corrections.",
+   "q": "How do I register to vote for the first time?",
+   "hindi_example_q": "पहली बार वोटर के रूप में रजिस्टर कैसे करूँ?",
+   "english_keywords": [
+    "voter",
+    "vote",
+    "voting",
+    "epic",
+    "election",
+    "electoral",
+    "वोटर",
+    "वोट",
+    "मतदाता",
+    "चुनाव"
+   ]
+  },
+  "dl": {
+   "t": "Driving licence",
+   "d": "Learner’s licence, new licence, renewal and status.",
+   "q": "How do I renew my driving licence?",
+   "hindi_example_q": "ड्राइविंग लाइसेंस का नवीनीकरण कैसे करूँ?",
+   "english_keywords": [
+    "driving",
+    "licence",
+    "license",
+    "dl",
+    "ड्राइविंग",
+    "लाइसेंस"
+   ]
+  },
+  "vehicle": {
+   "t": "Vehicles & challans",
+   "d": "RC transfer, vehicle registration and paying traffic challans.",
+   "q": "How do I pay my traffic challan?",
+   "hindi_example_q": "ट्रैफ़िक चालान कैसे भरूँ?",
+   "english_keywords": [
+    "vehicle",
+    "car",
+    "bike",
+    "scooter",
+    "rc",
+    "registration certificate",
+    "गाड़ी",
+    "वाहन",
+    "बाइक",
+    "=कार",
+    "स्कूटर"
+   ]
+  },
+  "ration": {
+   "t": "Ration card",
+   "d": "New cards, adding family members, using your card in another state.",
+   "q": "How do I add my wife’s name to our ration card?",
+   "hindi_example_q": "राशन कार्ड में पत्नी का नाम कैसे जुड़वाऊँ?",
+   "english_keywords": [
+    "ration",
+    "nfsa",
+    "राशन"
+   ]
+  },
+  "tax": {
+   "t": "Income tax",
+   "d": "Filing your ITR, refunds, paying tax and the tax calculator.",
+   "q": "I’m salaried. How do I file my income tax return?",
+   "hindi_example_q": "मैं नौकरी करता हूँ। आयकर रिटर्न कैसे भरूँ?",
+   "english_keywords": [
+    "income tax",
+    "tax",
+    "taxes",
+    "itr",
+    "आयकर",
+    "टैक्स",
+    "इनकम टैक्स"
+   ]
+  },
+  "business": {
+   "t": "Business & GST",
+   "d": "Udyam (MSME), GST, companies, food licences and selling to government.",
+   "q": "How do I register my small business?",
+   "hindi_example_q": "अपना छोटा व्यवसाय कैसे रजिस्टर करूँ?",
+   "english_keywords": [
+    "business",
+    "company",
+    "shop",
+    "startup",
+    "msme",
+    "firm",
+    "व्यवसाय",
+    "बिज़नेस",
+    "बिजनेस",
+    "कंपनी",
+    "दुकान",
+    "धंधा",
+    "कारोबार"
+   ]
+  },
+  "birth": {
+   "t": "Birth & death certificates",
+   "d": "Registering a birth or death and getting the certificate.",
+   "q": "How do I get my baby’s birth certificate?",
+   "hindi_example_q": "अपने बच्चे का जन्म प्रमाण पत्र कैसे बनवाऊँ?",
+   "english_keywords": [
+    "birth",
+    "death",
+    "जन्म",
+    "मृत्यु"
+   ]
+  },
+  "health": {
+   "t": "Health cover",
+   "d": "Ayushman Bharat, cover for everyone 70+, ABHA ID and hospitals.",
+   "q": "Am I eligible for Ayushman Bharat?",
+   "hindi_example_q": "क्या मैं आयुष्मान भारत के लिए पात्र हूँ?",
+   "english_keywords": [
+    "health",
+    "hospital",
+    "treatment",
+    "medical",
+    "ayushman",
+    "स्वास्थ्य",
+    "अस्पताल",
+    "इलाज",
+    "आयुष्मान"
+   ]
+  },
+  "pf": {
+   "t": "PF & pension",
+   "d": "PF balance, withdrawals, transfers and pensioners’ life certificates.",
+   "q": "How do I withdraw my PF after leaving a job?",
+   "hindi_example_q": "नौकरी छोड़ने के बाद पीएफ कैसे निकालूँ?",
+   "english_keywords": [
+    "pf",
+    "epf",
+    "epfo",
+    "provident fund",
+    "uan",
+    "pension",
+    "पीएफ",
+    "भविष्य निधि",
+    "पेंशन"
+   ]
+  },
+  "schemes": {
+   "t": "Schemes & benefits",
+   "d": "Find schemes, PM-Kisan, scholarships, housing, LPG and e-Shram.",
+   "q": "Which government schemes can a farmer in Bihar apply for?",
+   "hindi_example_q": "बिहार के किसान किन सरकारी योजनाओं के लिए आवेदन कर सकते हैं?",
+   "english_keywords": [
+    "scheme",
+    "schemes",
+    "yojana",
+    "subsidy",
+    "benefit",
+    "योजना",
+    "योजनाएँ",
+    "सब्सिडी",
+    "लाभ"
+   ]
+  },
+  "complaints": {
+   "t": "Complaints & fraud",
+   "d": "Cyber fraud, consumer complaints, lost phones and RTI.",
+   "q": "I lost money in a UPI fraud. What should I do?",
+   "hindi_example_q": "UPI फ्रॉड में पैसे कट गए। क्या करूँ?",
+   "english_keywords": [
+    "complaint",
+    "complain",
+    "fraud",
+    "scam",
+    "grievance",
+    "report",
+    "शिकायत",
+    "धोखा",
+    "धोखाधड़ी",
+    "ठगी"
+   ]
+  },
+  "documents": {
+   "t": "Documents & certificates",
+   "d": "DigiLocker, UMANG, and state certificates like caste, income and land records.",
+   "q": "How do I get an income certificate?",
+   "hindi_example_q": "आय प्रमाण पत्र कैसे बनवाऊँ?",
+   "english_keywords": [
+    "document",
+    "documents",
+    "digilocker",
+    "दस्तावेज़",
+    "डिजिलॉकर"
+   ]
+  },
+  "abroad": {
+   "t": "Abroad & visas",
+   "d": "OCI cards, e-Visas and help from Indian embassies.",
+   "q": "How do I apply for an OCI card?",
+   "hindi_example_q": "OCI कार्ड के लिए आवेदन कैसे करें?",
+   "english_keywords": [
+    "abroad",
+    "foreign",
+    "overseas",
+    "nri",
+    "oci",
+    "visa",
+    "embassy",
+    "विदेश",
+    "वीज़ा",
+    "वीजा",
+    "दूतावास",
+    "एनआरआई"
+   ]
+  }
+ },
+ "services": {
+  "aadhaar-update": {
+   "t": "Update the address or details on your Aadhaar",
+   "s": "Log in to myAadhaar with your Aadhaar number and an OTP, choose the update you need and upload a supporting document. Your address can be updated online; for a new mobile number, photo or fingerprints you need to visit an Aadhaar centre.",
+   "english_keywords": [
+    "address",
+    "date of birth",
+    "dob",
+    "pata",
+    "~update",
+    "~change",
+    "~correct",
+    "~name",
+    "~badal"
+   ]
+  },
+  "aadhaar-download": {
+   "t": "Download e-Aadhaar",
+   "s": "On myAadhaar, choose Download Aadhaar and enter your Aadhaar or enrolment number and the OTP. You get a password-protected PDF.",
+   "english_keywords": [
+    "download",
+    "e-aadhaar",
+    "eaadhaar",
+    "pdf",
+    "lost",
+    "kho",
+    "~copy"
+   ]
+  },
+  "aadhaar-status": {
+   "t": "Check your Aadhaar enrolment or update status",
+   "s": "On myAadhaar, choose Check Enrolment & Update Status and enter your enrolment ID or Update Request Number (URN).",
+   "english_keywords": [
+    "urn",
+    "enrolment id",
+    "enrollment id",
+    "eid",
+    "~status",
+    "~track"
+   ]
+  },
+  "aadhaar-centre": {
+   "t": "Find an Aadhaar centre or book an appointment",
+   "s": "You need to visit a centre for a new Aadhaar and to change your mobile number, photo or fingerprints. Find one nearby on the map, or book a slot at a UIDAI-run centre.",
+   "english_keywords": [
+    "centre",
+    "center",
+    "kendra",
+    "appointment",
+    "new aadhaar",
+    "mobile number",
+    "biometric",
+    "fingerprint",
+    "~enrol",
+    "~enroll",
+    "~mobile",
+    "~photo",
+    "~child"
+   ]
+  },
+  "pan-epan": {
+   "t": "Get a free instant e-PAN",
+   "s": "If your Aadhaar has a linked mobile number, you can get a PAN as a PDF in minutes, free of cost. Don’t apply if you already have a PAN — holding two is illegal.",
+   "english_keywords": [
+    "new pan",
+    "apply pan",
+    "pan apply",
+    "instant",
+    "get pan",
+    "first pan",
+    "free pan",
+    "~new",
+    "~apply"
+   ]
+  },
+  "pan-link": {
+   "t": "Link your PAN with Aadhaar",
+   "s": "Link them on the Income Tax e-filing portal, or check whether they’re already linked.",
+   "english_keywords": [
+    "link",
+    "linking",
+    "aadhaar link",
+    "link status"
+   ]
+  },
+  "pan-reprint": {
+   "t": "Replace a lost PAN card or correct your details",
+   "s": "Apply through the agency that issued your PAN — Protean (formerly NSDL) or UTIITSL. Both are authorised by the Income Tax Department. If you don’t know which, try your PAN on both.",
+   "english_keywords": [
+    "lost",
+    "kho",
+    "reprint",
+    "duplicate",
+    "damaged",
+    "~correction",
+    "~correct",
+    "~change",
+    "~name",
+    "~physical"
+   ]
+  },
+  "pan-verify": {
+   "t": "Check that a PAN is valid",
+   "s": "Confirm that a PAN is active and matches the holder’s name and date of birth.",
+   "english_keywords": [
+    "verify pan",
+    "check pan",
+    "valid",
+    "~verify",
+    "~active"
+   ]
+  },
+  "passport-apply": {
+   "t": "Apply for or renew a passport",
+   "s": "Register on Passport Seva, fill in the form, pay the fee and book a slot at a Passport Seva Kendra or Post Office Passport Seva Kendra. Children need their own passport.",
+   "english_keywords": [
+    "renew",
+    "renewal",
+    "reissue",
+    "tatkal",
+    "minor",
+    "~new",
+    "~expired",
+    "~child",
+    "~baby",
+    "~banwa"
+   ]
+  },
+  "passport-track": {
+   "t": "Track your passport application",
+   "s": "Use Track Application Status on Passport Seva with your file number and date of birth.",
+   "english_keywords": [
+    "file number",
+    "dispatch",
+    "police verification",
+    "~track",
+    "~status"
+   ]
+  },
+  "voter-register": {
+   "t": "Register as a new voter",
+   "s": "Fill in Form 6 online on the Voters’ Service Portal. A Booth Level Officer then verifies your details.",
+   "english_keywords": [
+    "register to vote",
+    "voter registration",
+    "new voter",
+    "form 6",
+    "~first time",
+    "~register"
+   ]
+  },
+  "voter-search": {
+   "t": "Find your name in the voter list",
+   "s": "Search the electoral roll by EPIC number, personal details or mobile number, and see your polling station.",
+   "english_keywords": [
+    "voter list",
+    "electoral roll",
+    "polling",
+    "booth",
+    "find my name",
+    "name in voter",
+    "name in the voter",
+    "name in list",
+    "~search"
+   ]
+  },
+  "voter-correct": {
+   "t": "Correct details, shift address or download e-EPIC",
+   "s": "Use Form 8 to correct your details or shift your address, and download your digital voter ID (e-EPIC).",
+   "english_keywords": [
+    "form 8",
+    "e-epic",
+    "shift",
+    "download",
+    "~correction",
+    "~correct",
+    "~move",
+    "~address",
+    "~download",
+    "~digital"
+   ]
+  },
+  "dl-apply": {
+   "t": "Apply for a learner’s or driving licence, or renew one",
+   "s": "Choose your state on Sarathi, then apply, pay the fee and book a test slot.",
+   "english_keywords": [
+    "learner",
+    "learning",
+    "ll",
+    "new licence",
+    "new license",
+    "renew",
+    "renewal",
+    "international",
+    "idp",
+    "~test",
+    "~slot",
+    "~expired"
+   ]
+  },
+  "dl-status": {
+   "t": "Check your licence application status",
+   "s": "On Sarathi, choose your state and open Application Status, or look up your licence details.",
+   "english_keywords": [
+    "application status",
+    "dl details",
+    "~status",
+    "~track"
+   ]
+  },
+  "vehicle-rc": {
+   "t": "RC transfer, vehicle registration and other RTO services",
+   "s": "On Parivahan, open Online Services → Vehicle Related Services and choose your state and RTO.",
+   "english_keywords": [
+    "rc",
+    "rc transfer",
+    "vehicle registration",
+    "register vehicle",
+    "hypothecation",
+    "noc",
+    "duplicate rc",
+    "road tax",
+    "~transfer",
+    "~ownership"
+   ]
+  },
+  "vehicle-challan": {
+   "t": "Check or pay a traffic challan",
+   "s": "Look up challans by vehicle number, licence number or challan number, and pay online.",
+   "english_keywords": [
+    "challan",
+    "traffic",
+    "~fine",
+    "~penalty"
+   ]
+  },
+  "ration-card": {
+   "t": "Get a ration card, add members or make changes",
+   "s": "Ration cards are issued by your state. Pick your state from the official list to reach its food department portal.",
+   "english_keywords": [
+    "~add",
+    "~member",
+    "~wife",
+    "~husband",
+    "~child",
+    "~delete",
+    "~remove",
+    "~change",
+    "~name",
+    "~new",
+    "~apply",
+    "~banwa"
+   ]
+  },
+  "ration-onorc": {
+   "t": "Use your ration card in another state",
+   "s": "Under One Nation One Ration Card, NFSA ration card holders can collect their ration from any fair price shop in the country.",
+   "english_keywords": [
+    "one nation",
+    "onorc",
+    "another state",
+    "other state",
+    "migrant",
+    "portability"
+   ]
+  },
+  "itr-file": {
+   "t": "File your income tax return (ITR)",
+   "s": "Log in to the e-filing portal with your PAN, choose File Income Tax Return, and e-verify when you’re done.",
+   "english_keywords": [
+    "itr",
+    "file itr",
+    "file return",
+    "income tax return",
+    "tax return",
+    "e-verify",
+    "form 16",
+    "~filing",
+    "~salaried"
+   ]
+  },
+  "tax-refund": {
+   "t": "Check your income tax refund",
+   "s": "Log in, then open e-File → Income Tax Returns → View Filed Returns to see the status of your return and refund.",
+   "english_keywords": [
+    "refund"
+   ]
+  },
+  "tax-pay": {
+   "t": "Pay income tax online",
+   "s": "Use e-Pay Tax to pay advance tax, self-assessment tax and other dues. You don’t need to log in.",
+   "english_keywords": [
+    "pay tax",
+    "pay income tax",
+    "tax payment",
+    "advance tax",
+    "self assessment",
+    "challan 280",
+    "~pay",
+    "~payment"
+   ]
+  },
+  "tax-calc": {
+   "t": "Estimate your income tax",
+   "s": "Use the Income Tax Department’s official tax calculator.",
+   "english_keywords": [
+    "calculate",
+    "calculator",
+    "how much tax",
+    "~regime"
+   ]
+  },
+  "udyam": {
+   "t": "Register your small business (Udyam / MSME)",
+   "s": "Udyam registration for micro, small and medium businesses is free and online, using your Aadhaar and PAN.",
+   "english_keywords": [
+    "udyam",
+    "msme",
+    "small business",
+    "register business",
+    "register my business",
+    "udyog"
+   ]
+  },
+  "gst-reg": {
+   "t": "Register for GST",
+   "s": "Apply for a new GST registration on the GST portal and track your application.",
+   "english_keywords": [
+    "gst",
+    "gst registration",
+    "register gst",
+    "new gst"
+   ]
+  },
+  "gst-search": {
+   "t": "Verify a GSTIN",
+   "s": "Check any business’s GST number, legal name and registration status.",
+   "english_keywords": [
+    "verify gst",
+    "search gst",
+    "check gst",
+    "gstin",
+    "gst number check"
+   ]
+  },
+  "company": {
+   "t": "Start a company or LLP",
+   "s": "Companies and LLPs are incorporated online on the Ministry of Corporate Affairs (MCA) portal.",
+   "english_keywords": [
+    "~company",
+    "private limited",
+    "pvt ltd",
+    "llp",
+    "incorporate",
+    "incorporation"
+   ]
+  },
+  "fssai": {
+   "t": "Get a food licence (FSSAI)",
+   "s": "Food businesses register or get a licence on FoSCoS, the FSSAI portal.",
+   "english_keywords": [
+    "fssai",
+    "food",
+    "food licence",
+    "food license",
+    "restaurant",
+    "cloud kitchen",
+    "~tiffin"
+   ]
+  },
+  "startup": {
+   "t": "Get recognised as a startup",
+   "s": "Apply for DPIIT startup recognition on Startup India.",
+   "english_keywords": [
+    "startup",
+    "start-up",
+    "dpiit",
+    "recognition"
+   ]
+  },
+  "gem": {
+   "t": "Sell to the government (GeM)",
+   "s": "Register as a seller on the Government e-Marketplace.",
+   "english_keywords": [
+    "gem",
+    "sell to government",
+    "government tender",
+    "tender",
+    "supplier",
+    "vendor"
+   ]
+  },
+  "birth-death": {
+   "t": "Register a birth or death and get the certificate",
+   "s": "Births and deaths should be registered within 21 days. Many states use the national CRS portal; others have their own, and the CRS site tells you which.",
+   "english_keywords": [
+    "birth certificate",
+    "death certificate",
+    "register birth",
+    "register death",
+    "newborn",
+    "janam",
+    "~baby",
+    "~born",
+    "~praman patra"
+   ]
+  },
+  "ayushman": {
+   "t": "Check Ayushman Bharat eligibility and get your card",
+   "s": "Log in with your mobile number to see if your family is covered, complete e-KYC and download the Ayushman card.",
+   "english_keywords": [
+    "ayushman",
+    "pmjay",
+    "pm-jay",
+    "ayushman card",
+    "golden card",
+    "5 lakh",
+    "insurance",
+    "health insurance",
+    "~eligible",
+    "~eligibility"
+   ]
+  },
+  "vay-vandana": {
+   "t": "Free health cover for everyone aged 70+",
+   "s": "Every citizen aged 70 or above can get the Ayushman Vay Vandana card, whatever their income. Enrol with Aadhaar e-KYC.",
+   "english_keywords": [
+    "vay vandana",
+    "vaya vandana",
+    "seventy",
+    "70",
+    "elderly",
+    "old age",
+    "senior citizen",
+    "~senior",
+    "~parents",
+    "~father",
+    "~mother",
+    "~dad",
+    "~mom",
+    "~papa",
+    "~mummy",
+    "~grandfather",
+    "~grandmother"
+   ]
+  },
+  "abha": {
+   "t": "Create your ABHA health ID",
+   "s": "A free 14-digit ID that keeps your health records together. Create it with Aadhaar or your driving licence.",
+   "english_keywords": [
+    "abha",
+    "health id",
+    "health account",
+    "health card",
+    "abdm"
+   ]
+  },
+  "pmjay-hospitals": {
+   "t": "Find a hospital that accepts Ayushman Bharat",
+   "s": "Search empanelled hospitals by state, district and speciality.",
+   "english_keywords": [
+    "hospital list",
+    "empanelled",
+    "find hospital",
+    "which hospital",
+    "nearest hospital",
+    "hospitals",
+    "accept"
+   ]
+  },
+  "pf-balance": {
+   "t": "Check your PF balance",
+   "s": "Log in with your UAN to view your EPF passbook.",
+   "english_keywords": [
+    "passbook",
+    "pf balance",
+    "epf balance",
+    "~balance",
+    "~how much"
+   ]
+  },
+  "pf-withdraw": {
+   "t": "Withdraw PF or claim pension",
+   "s": "Log in to the Member portal, go to Online Services → Claim and choose the withdrawal you need. Your UAN must be linked to your Aadhaar and bank account.",
+   "english_keywords": [
+    "withdraw",
+    "withdrawal",
+    "form 19",
+    "form 31",
+    "pension claim",
+    "nikal",
+    "~claim",
+    "~advance",
+    "~left job"
+   ]
+  },
+  "pf-transfer": {
+   "t": "Transfer PF to a new employer or activate your UAN",
+   "s": "On the Member portal, activate your UAN, update your KYC and transfer your old PF account.",
+   "english_keywords": [
+    "uan activate",
+    "activate uan",
+    "new employer",
+    "~transfer",
+    "~new job",
+    "~merge",
+    "~activate",
+    "~kyc"
+   ]
+  },
+  "jeevan-pramaan": {
+   "t": "Submit a pensioner’s life certificate",
+   "s": "Pensioners can submit a digital life certificate (Jeevan Pramaan) with Aadhaar authentication, including face authentication on a phone.",
+   "english_keywords": [
+    "life certificate",
+    "jeevan pramaan",
+    "pensioner",
+    "~pension"
+   ]
+  },
+  "myscheme": {
+   "t": "Find government schemes you’re eligible for",
+   "s": "Answer a few questions on myScheme to see central and state schemes that fit you.",
+   "english_keywords": [
+    "find scheme",
+    "government schemes",
+    "list of schemes",
+    "all schemes",
+    "widow",
+    "disability",
+    "divyang",
+    "~which",
+    "~eligible",
+    "~women",
+    "~senior"
+   ]
+  },
+  "pm-kisan": {
+   "t": "PM-Kisan: register, complete e-KYC or check your status",
+   "s": "Farmers can register, complete e-KYC and check their instalments under Know Your Status.",
+   "english_keywords": [
+    "kisan",
+    "farmer",
+    "pm kisan",
+    "installment",
+    "instalment",
+    "kist",
+    "6000"
+   ]
+  },
+  "scholarships": {
+   "t": "Scholarships for students",
+   "s": "Apply for central and many state scholarships on the National Scholarship Portal.",
+   "english_keywords": [
+    "scholarship",
+    "~student",
+    "~study",
+    "~college"
+   ]
+  },
+  "pmay": {
+   "t": "Help with a home: PM Awas Yojana",
+   "s": "In towns and cities, apply under PMAY-Urban. In villages, PMAY-Gramin beneficiaries are chosen through surveys and the Gram Sabha — ask your gram panchayat.",
+   "english_keywords": [
+    "house",
+    "housing",
+    "awas",
+    "pmay",
+    "ghar",
+    "makan",
+    "~home"
+   ]
+  },
+  "ujjwala": {
+   "t": "Free LPG connection (Ujjwala)",
+   "s": "Women from poor households can apply for a free LPG connection under PM Ujjwala Yojana.",
+   "english_keywords": [
+    "lpg",
+    "gas",
+    "cylinder",
+    "ujjwala",
+    "cooking gas"
+   ]
+  },
+  "eshram": {
+   "t": "e-Shram card for unorganised workers",
+   "s": "Workers without PF or ESIC — such as labourers, domestic workers and gig workers — can register for free.",
+   "english_keywords": [
+    "eshram",
+    "e-shram",
+    "shram",
+    "labour",
+    "labor",
+    "labourer",
+    "unorganised",
+    "unorganized",
+    "daily wage",
+    "~worker",
+    "~gig",
+    "~delivery",
+    "~domestic"
+   ]
+  },
+  "vishwakarma": {
+   "t": "PM Vishwakarma for artisans",
+   "s": "Traditional artisans and craftspeople — carpenters, tailors, potters and more — can get training, a toolkit grant and loans.",
+   "english_keywords": [
+    "vishwakarma",
+    "artisan",
+    "carpenter",
+    "tailor",
+    "potter",
+    "blacksmith",
+    "barber",
+    "craftsman"
+   ]
+  },
+  "cyber-fraud": {
+   "t": "Report online fraud or cyber crime",
+   "s": "Lost money to a scam? Call 1930 straight away — acting fast gives the best chance of stopping the money — then file a complaint on the cyber crime portal.",
+   "english_keywords": [
+    "cyber",
+    "online fraud",
+    "upi fraud",
+    "upi",
+    "scam",
+    "hacked",
+    "otp fraud",
+    "money lost",
+    "lost money",
+    "sextortion",
+    "digital arrest"
+   ]
+  },
+  "consumer": {
+   "t": "Complain about a product or company",
+   "s": "Raise a consumer complaint with the National Consumer Helpline — online or by calling 1915.",
+   "english_keywords": [
+    "consumer",
+    "refund not received",
+    "defective",
+    "faulty",
+    "cheated",
+    "warranty",
+    "~product",
+    "~ecommerce",
+    "~e-commerce"
+   ]
+  },
+  "cpgrams": {
+   "t": "Complain about a government department",
+   "s": "File a grievance against a central or state government office on CPGRAMS and track it.",
+   "english_keywords": [
+    "grievance",
+    "cpgrams",
+    "pgportal",
+    "government office",
+    "~department",
+    "~officer",
+    "~delay",
+    "~government",
+    "~govt",
+    "~sarkar",
+    "~sarkari"
+   ]
+  },
+  "rti": {
+   "t": "File an RTI application",
+   "s": "Ask any central government public authority for information online, for a ₹10 fee. Many states run their own RTI portals.",
+   "english_keywords": [
+    "rti",
+    "right to information"
+   ]
+  },
+  "lost-phone": {
+   "t": "Block a lost or stolen phone",
+   "s": "Report it to the police, then block the phone on Sanchar Saathi so it can’t be used on any network in India.",
+   "english_keywords": [
+    "lost phone",
+    "lost my phone",
+    "lost my mobile",
+    "stolen phone",
+    "stolen mobile",
+    "phone stolen",
+    "phone lost",
+    "mobile chori",
+    "stolen",
+    "theft",
+    "chori",
+    "imei",
+    "block phone",
+    "ceir",
+    "~phone",
+    "~mobile"
+   ]
+  },
+  "sim-check": {
+   "t": "See which SIM cards are in your name, or report fraud calls",
+   "s": "Check the mobile connections issued against your ID, and report suspected fraud calls or messages.",
+   "english_keywords": [
+    "sim",
+    "sims",
+    "mobile connections",
+    "connections in my name",
+    "in my name",
+    "fraud call",
+    "spam call",
+    "fake call",
+    "chakshu"
+   ]
+  },
+  "state-certificates": {
+   "t": "Caste, income or domicile certificates, land records, marriage registration",
+   "s": "These are run by your state government, usually through its e-district or land records portal. Start from the national services directory.",
+   "english_keywords": [
+    "caste",
+    "income certificate",
+    "domicile",
+    "residence certificate",
+    "land record",
+    "land",
+    "khata",
+    "khasra",
+    "khatauni",
+    "jamabandi",
+    "bhulekh",
+    "marriage",
+    "jati",
+    "aay praman"
+   ]
+  },
+  "digilocker": {
+   "t": "Keep official documents on your phone (DigiLocker)",
+   "s": "Get digital copies of your driving licence, vehicle RC, marksheets and more, issued directly by the departments.",
+   "english_keywords": [
+    "digilocker",
+    "digital copy",
+    "marksheet",
+    "mark sheet",
+    "marks card",
+    "documents on phone"
+   ]
+  },
+  "umang": {
+   "t": "Many government services in one app (UMANG)",
+   "s": "Use UMANG on the web or as an app for services from central and state departments.",
+   "english_keywords": [
+    "umang",
+    "~app",
+    "~one app"
+   ]
+  },
+  "oci": {
+   "t": "Apply for an OCI card",
+   "s": "Foreign citizens of Indian origin, and foreign spouses of Indian citizens or OCI holders, can apply online.",
+   "english_keywords": [
+    "oci",
+    "overseas citizen",
+    "pio"
+   ]
+  },
+  "evisa": {
+   "t": "Indian e-Visa for foreign visitors",
+   "s": "Foreign nationals can apply online for tourist, business, medical and other e-Visas.",
+   "english_keywords": [
+    "visa",
+    "e-visa",
+    "evisa",
+    "tourist visa",
+    "foreigner",
+    "visit india"
+   ]
+  },
+  "madad": {
+   "t": "Help from an Indian embassy abroad (MADAD)",
+   "s": "Indians abroad can raise consular problems — emergencies, unpaid wages, bringing home mortal remains — with Indian missions.",
+   "english_keywords": [
+    "madad",
+    "embassy",
+    "consulate",
+    "stuck abroad",
+    "help abroad",
+    "~mission"
+   ]
+  }
+ },
+ "states": {
+  "andaman-and-nicobar-islands": {
+   "name": "Andaman and Nicobar Islands",
+   "type": "ut",
+   "cities": [
+    "Sri Vijaya Puram (Port Blair)",
+    "Mayabunder",
+    "Car Nicobar",
+    "Diglipur",
+    "Rangat",
+    "Campbell Bay",
+    "Hut Bay",
+    "Swaraj Dweep (Havelock)"
+   ]
+  },
+  "andhra-pradesh": {
+   "name": "Andhra Pradesh",
+   "type": "state",
+   "cities": [
+    "Visakhapatnam",
+    "Vijayawada",
+    "Guntur",
+    "Nellore",
+    "Kurnool",
+    "Tirupati",
+    "Kakinada",
+    "Rajamahendravaram",
+    "Kadapa",
+    "Anantapur",
+    "Vizag"
+   ]
+  },
+  "arunachal-pradesh": {
+   "name": "Arunachal Pradesh",
+   "type": "state",
+   "cities": [
+    "Itanagar",
+    "Naharlagun",
+    "Pasighat",
+    "Tawang",
+    "Bomdila",
+    "Tezu",
+    "Roing",
+    "Namsai"
+   ]
+  },
+  "assam": {
+   "name": "Assam",
+   "type": "state",
+   "cities": [
+    "Guwahati",
+    "Dispur",
+    "Dibrugarh",
+    "Silchar",
+    "Jorhat",
+    "Tezpur",
+    "Nagaon",
+    "Tinsukia",
+    "Bongaigaon",
+    "Diphu",
+    "Gauhati"
+   ]
+  },
+  "bihar": {
+   "name": "Bihar",
+   "type": "state",
+   "cities": [
+    "Patna",
+    "Bhagalpur",
+    "Muzaffarpur",
+    "Darbhanga",
+    "Purnia",
+    "Begusarai",
+    "Arrah",
+    "Chhapra",
+    "Bihar Sharif"
+   ]
+  },
+  "chandigarh": {
+   "name": "Chandigarh",
+   "type": "ut",
+   "cities": [
+    "Chandigarh",
+    "Manimajra",
+    "Burail",
+    "Maloya",
+    "Dhanas",
+    "Mauli Jagran"
+   ]
+  },
+  "chhattisgarh": {
+   "name": "Chhattisgarh",
+   "type": "state",
+   "cities": [
+    "Raipur",
+    "Nava Raipur (Atal Nagar)",
+    "Bhilai",
+    "Durg",
+    "Korba",
+    "Rajnandgaon",
+    "Jagdalpur",
+    "Raigarh",
+    "Ambikapur"
+   ]
+  },
+  "dadra-and-nagar-haveli-and-daman-and-diu": {
+   "name": "Dadra and Nagar Haveli and Daman and Diu",
+   "type": "ut",
+   "cities": [
+    "Silvassa",
+    "Daman",
+    "Diu",
+    "Dadra",
+    "Naroli",
+    "Khanvel"
+   ]
+  },
+  "delhi": {
+   "name": "Delhi",
+   "type": "ut",
+   "cities": [
+    "New Delhi",
+    "Shahdara",
+    "Narela",
+    "Najafgarh",
+    "Karol Bagh",
+    "Mehrauli",
+    "Daryaganj"
+   ]
+  },
+  "goa": {
+   "name": "Goa",
+   "type": "state",
+   "cities": [
+    "Panaji",
+    "Margao (Madgaon)",
+    "Vasco da Gama",
+    "Mapusa",
+    "Ponda",
+    "Bicholim"
+   ]
+  },
+  "gujarat": {
+   "name": "Gujarat",
+   "type": "state",
+   "cities": [
+    "Ahmedabad",
+    "Vadodara",
+    "Rajkot",
+    "Gandhinagar",
+    "Bhavnagar",
+    "Jamnagar",
+    "Junagadh",
+    "Bhuj",
+    "Baroda"
+   ]
+  },
+  "haryana": {
+   "name": "Haryana",
+   "type": "state",
+   "cities": [
+    "Faridabad",
+    "Gurugram",
+    "Panipat",
+    "Ambala",
+    "Rohtak",
+    "Hisar",
+    "Karnal",
+    "Sonipat",
+    "Panchkula",
+    "Yamunanagar",
+    "Gurgaon"
+   ]
+  },
+  "himachal-pradesh": {
+   "name": "Himachal Pradesh",
+   "type": "state",
+   "cities": [
+    "Shimla",
+    "Dharamshala",
+    "Solan",
+    "Kullu",
+    "Hamirpur",
+    "Chamba",
+    "Nahan",
+    "Simla"
+   ]
+  },
+  "jammu-and-kashmir": {
+   "name": "Jammu and Kashmir",
+   "type": "ut",
+   "cities": [
+    "Srinagar",
+    "Jammu",
+    "Anantnag",
+    "Baramulla",
+    "Sopore",
+    "Udhampur",
+    "Kathua",
+    "Rajouri",
+    "Poonch",
+    "Doda"
+   ]
+  },
+  "jharkhand": {
+   "name": "Jharkhand",
+   "type": "state",
+   "cities": [
+    "Ranchi",
+    "Jamshedpur",
+    "Dhanbad",
+    "Bokaro Steel City",
+    "Deoghar",
+    "Hazaribagh",
+    "Giridih",
+    "Dumka",
+    "Ramgarh",
+    "Medininagar (Daltonganj)"
+   ]
+  },
+  "karnataka": {
+   "name": "Karnataka",
+   "type": "state",
+   "cities": [
+    "Bengaluru",
+    "Mysuru",
+    "Mangaluru",
+    "Hubballi",
+    "Belagavi",
+    "Kalaburagi",
+    "Davanagere",
+    "Ballari",
+    "Shivamogga",
+    "Tumakuru",
+    "Bangalore",
+    "Mysore",
+    "Mangalore",
+    "Hubli",
+    "Belgaum"
+   ]
+  },
+  "kerala": {
+   "name": "Kerala",
+   "type": "state",
+   "cities": [
+    "Thiruvananthapuram",
+    "Kochi",
+    "Kozhikode",
+    "Thrissur",
+    "Kollam",
+    "Kannur",
+    "Alappuzha",
+    "Palakkad",
+    "Kottayam",
+    "Malappuram",
+    "Trivandrum",
+    "Cochin",
+    "Calicut"
+   ]
+  },
+  "ladakh": {
+   "name": "Ladakh",
+   "type": "ut",
+   "cities": [
+    "Leh",
+    "Kargil",
+    "Drass",
+    "Padum",
+    "Diskit",
+    "Nyoma"
+   ]
+  },
+  "lakshadweep": {
+   "name": "Lakshadweep",
+   "type": "ut",
+   "cities": [
+    "Kavaratti",
+    "Agatti",
+    "Minicoy",
+    "Amini",
+    "Andrott",
+    "Kalpeni",
+    "Kadmat",
+    "Kiltan"
+   ]
+  },
+  "madhya-pradesh": {
+   "name": "Madhya Pradesh",
+   "type": "state",
+   "cities": [
+    "Bhopal",
+    "Indore",
+    "Jabalpur",
+    "Gwalior",
+    "Ujjain",
+    "Rewa",
+    "Satna",
+    "Ratlam",
+    "Dewas"
+   ]
+  },
+  "maharashtra": {
+   "name": "Maharashtra",
+   "type": "state",
+   "cities": [
+    "Mumbai",
+    "Pune",
+    "Nagpur",
+    "Nashik",
+    "Chhatrapati Sambhajinagar (Aurangabad)",
+    "Solapur",
+    "Kolhapur",
+    "Amravati",
+    "Nanded",
+    "Bombay",
+    "Poona"
+   ]
+  },
+  "manipur": {
+   "name": "Manipur",
+   "type": "state",
+   "cities": [
+    "Imphal",
+    "Thoubal",
+    "Bishnupur",
+    "Churachandpur",
+    "Kakching",
+    "Ukhrul",
+    "Tamenglong",
+    "Jiribam"
+   ]
+  },
+  "meghalaya": {
+   "name": "Meghalaya",
+   "type": "state",
+   "cities": [
+    "Shillong",
+    "Jowai",
+    "Nongpoh",
+    "Nongstoin",
+    "Williamnagar",
+    "Baghmara",
+    "Khliehriat",
+    "Resubelpara",
+    "Mawkyrwat"
+   ]
+  },
+  "mizoram": {
+   "name": "Mizoram",
+   "type": "state",
+   "cities": [
+    "Aizawl",
+    "Lunglei",
+    "Champhai",
+    "Kolasib",
+    "Serchhip",
+    "Mamit",
+    "Lawngtlai",
+    "Siaha",
+    "Saitual",
+    "Khawzawl"
+   ]
+  },
+  "nagaland": {
+   "name": "Nagaland",
+   "type": "state",
+   "cities": [
+    "Kohima",
+    "Dimapur",
+    "Mokokchung",
+    "Tuensang",
+    "Wokha",
+    "Zunheboto",
+    "Kiphire",
+    "Peren"
+   ]
+  },
+  "odisha": {
+   "name": "Odisha",
+   "type": "state",
+   "cities": [
+    "Bhubaneswar",
+    "Cuttack",
+    "Rourkela",
+    "Berhampur (Brahmapur)",
+    "Sambalpur",
+    "Balasore (Baleswar)",
+    "Bhadrak",
+    "Baripada",
+    "Jharsuguda"
+   ]
+  },
+  "puducherry": {
+   "name": "Puducherry",
+   "type": "ut",
+   "cities": [
+    "Puducherry",
+    "Karaikal",
+    "Mahe",
+    "Yanam",
+    "Ozhukarai",
+    "Villianur"
+   ]
+  },
+  "punjab": {
+   "name": "Punjab",
+   "type": "state",
+   "cities": [
+    "Ludhiana",
+    "Amritsar",
+    "Jalandhar",
+    "Patiala",
+    "Bathinda",
+    "Mohali",
+    "Hoshiarpur",
+    "Pathankot",
+    "Moga",
+    "Firozpur"
+   ]
+  },
+  "rajasthan": {
+   "name": "Rajasthan",
+   "type": "state",
+   "cities": [
+    "Jaipur",
+    "Jodhpur",
+    "Udaipur",
+    "Ajmer",
+    "Bikaner",
+    "Alwar",
+    "Bhilwara",
+    "Sikar",
+    "Bharatpur"
+   ]
+  },
+  "sikkim": {
+   "name": "Sikkim",
+   "type": "state",
+   "cities": [
+    "Gangtok",
+    "Namchi",
+    "Gyalshing",
+    "Mangan",
+    "Pakyong",
+    "Soreng",
+    "Rangpo",
+    "Jorethang"
+   ]
+  },
+  "tamil-nadu": {
+   "name": "Tamil Nadu",
+   "type": "state",
+   "cities": [
+    "Chennai",
+    "Coimbatore",
+    "Madurai",
+    "Tiruchirappalli",
+    "Salem",
+    "Tirunelveli",
+    "Vellore",
+    "Thoothukudi",
+    "Thanjavur",
+    "Madras",
+    "Trichy"
+   ]
+  },
+  "telangana": {
+   "name": "Telangana",
+   "type": "state",
+   "cities": [
+    "Hyderabad",
+    "Warangal",
+    "Nizamabad",
+    "Karimnagar",
+    "Khammam",
+    "Ramagundam",
+    "Mahabubnagar",
+    "Nalgonda",
+    "Adilabad",
+    "Siddipet",
+    "Secunderabad"
+   ]
+  },
+  "tripura": {
+   "name": "Tripura",
+   "type": "state",
+   "cities": [
+    "Agartala",
+    "Dharmanagar",
+    "Kailashahar",
+    "Ambassa",
+    "Khowai",
+    "Belonia",
+    "Bishramganj",
+    "Teliamura",
+    "Sabroom"
+   ]
+  },
+  "uttar-pradesh": {
+   "name": "Uttar Pradesh",
+   "type": "state",
+   "cities": [
+    "Lucknow",
+    "Kanpur",
+    "Prayagraj",
+    "Varanasi",
+    "Agra",
+    "Ghaziabad",
+    "Meerut",
+    "Gorakhpur",
+    "Bareilly",
+    "Noida",
+    "Allahabad",
+    "Banaras",
+    "Benares"
+   ]
+  },
+  "uttarakhand": {
+   "name": "Uttarakhand",
+   "type": "state",
+   "cities": [
+    "Dehradun",
+    "Haridwar",
+    "Roorkee",
+    "Haldwani",
+    "Rudrapur",
+    "Kashipur",
+    "Rishikesh",
+    "Nainital",
+    "Almora",
+    "Pithoragarh"
+   ]
+  },
+  "west-bengal": {
+   "name": "West Bengal",
+   "type": "state",
+   "cities": [
+    "Kolkata",
+    "Howrah",
+    "Asansol",
+    "Durgapur",
+    "Siliguri",
+    "Bardhaman",
+    "Kharagpur",
+    "Malda",
+    "Darjeeling",
+    "Haldia",
+    "Calcutta"
+   ]
+  }
+ }
+}
