@@ -12,9 +12,12 @@ Babu is a hand-checked directory of official government pages (`data.js`). When 
 
 There is no AI and no server. If Babu can't match a question, it says so and points to the national directories (myScheme and india.gov.in).
 
-## Run locally
+## Sharing and emergency numbers
 
-No build step — it's plain HTML, CSS and JavaScript.
+Every answer has **Share on WhatsApp** and **Copy link** buttons. The WhatsApp message contains the service name, the official government link itself (the state's own portal when a state is picked) and a link back to Babu. Shared links look like `…/babuindia/?lang=ta#svc=ration-card&state=bihar` or `#state=kerala` and open straight to that answer. They carry only the service, state and language — never the person's question.
+
+Under the search box there is a row of free helplines with tap-to-call links: 112 (emergency), 108 (ambulance), 1930 (cyber fraud), 1098 (children), 181 (women), 14567 (senior citizens) and 14416 (Tele-MANAS mental health). The list is `SOS` in `app.js`; labels are the `sos.*` strings.
+
 
 ```bash
 python3 -m http.server 4321
