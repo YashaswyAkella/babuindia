@@ -18,13 +18,6 @@ Every answer has **Share on WhatsApp** and **Copy link** buttons. The WhatsApp m
 
 Under the search box there is a row of free helplines with tap-to-call links: 112 (emergency), 108 (ambulance), 1930 (cyber fraud), 1098 (children), 181 (women), 14567 (senior citizens) and 14416 (Tele-MANAS mental health). The list is `SOS` in `app.js`; labels are the `sos.*` strings.
 
-
-```bash
-python3 -m http.server 4321
-```
-
-Then open http://localhost:4321 (add `?lang=hi`, `mr`, `gu`, `pa`, `te`, `ta`, `kn`, `ml`, `bn` or `or` to pick a language).
-
 ## Files
 
 - `index.html` — page structure
